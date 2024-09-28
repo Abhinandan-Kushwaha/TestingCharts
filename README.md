@@ -1,0 +1,1 @@
+Screenshot tests for [react-native-gifted-charts](https://github.com/Abhinandan-Kushwaha/react-native-gifted-charts)

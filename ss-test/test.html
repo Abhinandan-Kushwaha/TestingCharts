@@ -1,0 +1,2081 @@
+<html>
+          <head>
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              <script>
+                  var diffHtmlString = ``
+                  var passedHtmlString = `<div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels1')"><i id="barAxesAndLabels1icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: A chart with only +ve values should have y Axis labels and the Y-axis line at the proper position</div>
+  </div>
+  <div id="barAxesAndLabels1" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsTopLabel":true}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels1
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels1.png" alt="./old/barAxesAndLabels1.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels10')"><i id="barAxesAndLabels10icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "yAxisExtraHeight" should add extra height to the chart when "height" is given</div>
+  </div>
+  <div id="barAxesAndLabels10" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsTopLabel":true,"yAxisExtraHeight":40,"height":260}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels10
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels10.png" alt="./old/barAxesAndLabels10.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels11')"><i id="barAxesAndLabels11icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "yAxisLabelWidth" prop should change the width of the y-Axis label and should horizontally shift the chart gracefully</div>
+  </div>
+  <div id="barAxesAndLabels11" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsTopLabel":true,"yAxisLabelWidth":50}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels11
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels11.png" alt="./old/barAxesAndLabels11.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels12')"><i id="barAxesAndLabels12icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: Check alignment of the right side y-Axis line and labels when using the "yAxisLabelWidth" prop along with "yAxisSide = {yAxisSides.RIGHT}"</div>
+  </div>
+  <div id="barAxesAndLabels12" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsTopLabel":true,"yAxisSide":1,"yAxisLabelWidth":50}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels12
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels12.png" alt="./old/barAxesAndLabels12.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels13')"><i id="barAxesAndLabels13icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "trimYAxisAtTop" should shorten the Y axis from top without shifting the labels, chart or rules</div>
+  </div>
+  <div id="barAxesAndLabels13" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsTopLabel":true,"trimYAxisAtTop":true}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels13
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels13.png" alt="./old/barAxesAndLabels13.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels14')"><i id="barAxesAndLabels14icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "trimYAxisAtTop" should shorten the Y axis from top for the right side Y-axis when used with "yAxisSide = {yAxisSides.RIGHT}"</div>
+  </div>
+  <div id="barAxesAndLabels14" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsTopLabel":true,"trimYAxisAtTop":true,"yAxisSide":1}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels14
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels14.png" alt="./old/barAxesAndLabels14.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels15')"><i id="barAxesAndLabels15icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "trimYAxisAtTop" should shorten both sides Y-axis when using the secondary Y axis</div>
+  </div>
+  <div id="barAxesAndLabels15" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsTopLabel":true,"frontColor":"rgba(0,0,0,0.3)","secondaryYAxis":true,"showLine":true,"lineData":[{"value":0.4},{"value":0.25},{"value":0.6},{"value":0.8}],"lineConfig":{"isSecondary":true,"color":"green"},"trimYAxisAtTop":true}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels15
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels15.png" alt="./old/barAxesAndLabels15.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels16')"><i id="barAxesAndLabels16icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "yAxisLabelPrefix" should add the prefix to Y-axis labels</div>
+  </div>
+  <div id="barAxesAndLabels16" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsTopLabel":true,"yAxisLabelPrefix":"$"}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels16
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels16.png" alt="./old/barAxesAndLabels16.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels17')"><i id="barAxesAndLabels17icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "yAxisLabelSuffix" should add the suffix to Y-axis labels</div>
+  </div>
+  <div id="barAxesAndLabels17" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsTopLabel":true,"yAxisLabelSuffix":"k"}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels17
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels17.png" alt="./old/barAxesAndLabels17.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels18')"><i id="barAxesAndLabels18icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: Both "yAxisLabelPrefix" and "yAxisLabelSuffix" should work together</div>
+  </div>
+  <div id="barAxesAndLabels18" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsTopLabel":true,"yAxisLabelPrefix":"$","yAxisLabelSuffix":"k"}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels18
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels18.png" alt="./old/barAxesAndLabels18.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels19')"><i id="barAxesAndLabels19icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: Both "yAxisLabelPrefix" and "yAxisLabelSuffix" should work together for chart with both +ve & -ve values</div>
+  </div>
+  <div id="barAxesAndLabels19" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"showValuesAsTopLabel":true,"yAxisLabelPrefix":"$","yAxisLabelSuffix":"k"}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels19
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels19.png" alt="./old/barAxesAndLabels19.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels2')"><i id="barAxesAndLabels2icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: A chart with both +ve and -ve values should have y Axis labels and the Y-axis line at the proper positions both in the 1st and the 4th quadrant</div>
+  </div>
+  <div id="barAxesAndLabels2" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"showValuesAsTopLabel":true}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels2
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels2.png" alt="./old/barAxesAndLabels2.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels20')"><i id="barAxesAndLabels20icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: Both "yAxisLabelPrefix" and "yAxisLabelSuffix" should work together for chart with fractional values</div>
+  </div>
+  <div id="barAxesAndLabels20" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":0.4},{"value":0.25},{"value":0.6},{"value":0.8}],"showValuesAsTopLabel":true,"yAxisLabelPrefix":"$","yAxisLabelSuffix":"k"}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels20
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels20.png" alt="./old/barAxesAndLabels20.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels21')"><i id="barAxesAndLabels21icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "formatYLabel" should format the Y-axis labels</div>
+  </div>
+  <div id="barAxesAndLabels21" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"showValuesAsTopLabel":true}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels21
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels21.png" alt="./old/barAxesAndLabels21.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels22')"><i id="barAxesAndLabels22icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "formatYLabel" should work on top of "yAxisLabelPrefix" and "yAxisLabelSuffix"</div>
+  </div>
+  <div id="barAxesAndLabels22" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"showValuesAsTopLabel":true,"yAxisLabelPrefix":"$","yAxisLabelSuffix":"k","yAxisLabelWidth":60}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels22
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels22.png" alt="./old/barAxesAndLabels22.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels23')"><i id="barAxesAndLabels23icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "rulesLength" prop should work for a chart with +ve values only</div>
+  </div>
+  <div id="barAxesAndLabels23" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsTopLabel":true,"rulesLength":140}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels23
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels23.png" alt="./old/barAxesAndLabels23.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels24')"><i id="barAxesAndLabels24icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "rulesLength" prop should work for a chart with both +ve and -ve values</div>
+  </div>
+  <div id="barAxesAndLabels24" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"showValuesAsTopLabel":true,"rulesLength":140}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels24
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels24.png" alt="./old/barAxesAndLabels24.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels25')"><i id="barAxesAndLabels25icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: Reference line 1 should work for a chart with +ve values only</div>
+  </div>
+  <div id="barAxesAndLabels25" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsTopLabel":true,"showReferenceLine1":true,"referenceLine1Position":12}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels25
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels25.png" alt="./old/barAxesAndLabels25.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels26')"><i id="barAxesAndLabels26icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: Reference line 1 should work for a chart with both +ve and -ve values</div>
+  </div>
+  <div id="barAxesAndLabels26" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"showValuesAsTopLabel":true,"rulesLength":140,"showReferenceLine1":true,"referenceLine1Position":12}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels26
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels26.png" alt="./old/barAxesAndLabels26.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels27')"><i id="barAxesAndLabels27icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: Reference line 2 should work for a chart with +ve values only</div>
+  </div>
+  <div id="barAxesAndLabels27" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsTopLabel":true,"showReferenceLine1":true,"referenceLine1Position":12,"showReferenceLine2":true,"referenceLine2Position":7}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels27
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels27.png" alt="./old/barAxesAndLabels27.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels28')"><i id="barAxesAndLabels28icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: Reference line 2 should work for a chart with both +ve and -ve values</div>
+  </div>
+  <div id="barAxesAndLabels28" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"showValuesAsTopLabel":true,"rulesLength":140,"showReferenceLine1":true,"referenceLine1Position":12,"showReferenceLine2":true,"referenceLine2Position":7}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels28
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels28.png" alt="./old/barAxesAndLabels28.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels29')"><i id="barAxesAndLabels29icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "referenceLinesOverChartContent" should render reference lines over chart content</div>
+  </div>
+  <div id="barAxesAndLabels29" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"showValuesAsTopLabel":true,"rulesLength":140,"showReferenceLine1":true,"referenceLine1Position":12,"showReferenceLine2":true,"referenceLine2Position":7,"referenceLinesOverChartContent":true}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels29
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels29.png" alt="./old/barAxesAndLabels29.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels3')"><i id="barAxesAndLabels3icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: A chart with only +ve values, all values less than 1 should show fractional labels on the y Axis</div>
+  </div>
+  <div id="barAxesAndLabels3" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":0.4},{"value":0.25},{"value":0.6},{"value":0.8}],"showValuesAsTopLabel":true}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels3
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels3.png" alt="./old/barAxesAndLabels3.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels30')"><i id="barAxesAndLabels30icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "showVerticalLines" should work</div>
+  </div>
+  <div id="barAxesAndLabels30" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsTopLabel":true,"showVerticalLines":true}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels30
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels30.png" alt="./old/barAxesAndLabels30.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels31')"><i id="barAxesAndLabels31icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "verticalLinesHeight" should work</div>
+  </div>
+  <div id="barAxesAndLabels31" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsTopLabel":true,"showVerticalLines":true,"verticalLinesHeight":160}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels31
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels31.png" alt="./old/barAxesAndLabels31.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels32')"><i id="barAxesAndLabels32icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "verticalLinesShift" should work</div>
+  </div>
+  <div id="barAxesAndLabels32" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsTopLabel":true,"showVerticalLines":true,"verticalLinesShift":20}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels32
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels32.png" alt="./old/barAxesAndLabels32.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels33')"><i id="barAxesAndLabels33icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "noOfVerticalLines" should work</div>
+  </div>
+  <div id="barAxesAndLabels33" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsTopLabel":true,"showVerticalLines":true,"noOfVerticalLines":3}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels33
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels33.png" alt="./old/barAxesAndLabels33.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels34')"><i id="barAxesAndLabels34icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "verticalLinesSpacing" should work</div>
+  </div>
+  <div id="barAxesAndLabels34" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsTopLabel":true,"showVerticalLines":true,"verticalLinesSpacing":25}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels34
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels34.png" alt="./old/barAxesAndLabels34.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels35')"><i id="barAxesAndLabels35icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "rotateLabel" should work for a chart with +ve values only</div>
+  </div>
+  <div id="barAxesAndLabels35" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10,"label":"Jan"},{"value":15,"label":"Feb"},{"value":6,"label":"Mar"},{"value":8,"label":"Apr"}],"showValuesAsTopLabel":true,"rotateLabel":true}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels35
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels35.png" alt="./old/barAxesAndLabels35.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels36')"><i id="barAxesAndLabels36icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "rotateLabel" should work for a chart with both +ve and -ve values</div>
+  </div>
+  <div id="barAxesAndLabels36" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10,"label":"Jan"},{"value":15,"label":"Feb"},{"value":-6,"label":"Mar"},{"value":8,"label":"Apr"},{"value":-4,"label":"May"}],"showValuesAsTopLabel":true,"rotateLabel":true}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels36
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels36.png" alt="./old/barAxesAndLabels36.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels37')"><i id="barAxesAndLabels37icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "labelsDistanceFromXaxis" should work for a chart with +ve values only</div>
+  </div>
+  <div id="barAxesAndLabels37" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10,"label":"Jan"},{"value":15,"label":"Feb"},{"value":6,"label":"Mar"},{"value":8,"label":"Apr"}],"showValuesAsTopLabel":true,"labelsDistanceFromXaxis":20}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels37
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels37.png" alt="./old/barAxesAndLabels37.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels38')"><i id="barAxesAndLabels38icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "labelsDistanceFromXaxis" should work for a chart with both +ve and -ve values</div>
+  </div>
+  <div id="barAxesAndLabels38" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10,"label":"Jan"},{"value":15,"label":"Feb"},{"value":-6,"label":"Mar"},{"value":8,"label":"Apr"},{"value":-4,"label":"May"}],"showValuesAsTopLabel":true,"labelsDistanceFromXaxis":20}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels38
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels38.png" alt="./old/barAxesAndLabels38.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels39')"><i id="barAxesAndLabels39icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "xAxisTextNumberOfLines" should work</div>
+  </div>
+  <div id="barAxesAndLabels39" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10,"label":"January 2024"},{"value":15,"label":"February 2024"},{"value":6,"label":"March 2024"},{"value":8,"label":"April 2024"}],"showValuesAsTopLabel":true,"xAxisTextNumberOfLines":2}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels39
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels39.png" alt="./old/barAxesAndLabels39.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels4')"><i id="barAxesAndLabels4icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: A chart with only +ve values, with values range less than 1 should show fractional labels on the y Axis (given apt "yAxisOffset")</div>
+  </div>
+  <div id="barAxesAndLabels4" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":90.2},{"value":90.5},{"value":90.3},{"value":90.8}],"showValuesAsTopLabel":true,"yAxisOffset":90}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels4
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels4.png" alt="./old/barAxesAndLabels4.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels40')"><i id="barAxesAndLabels40icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "xAxisLabelsHeight" should work</div>
+  </div>
+  <div id="barAxesAndLabels40" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10,"label":"January 2024"},{"value":15,"label":"February 2024"},{"value":6,"label":"March 2024"},{"value":8,"label":"April 2024"}],"showValuesAsTopLabel":true,"xAxisTextNumberOfLines":2,"xAxisLabelsHeight":100}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels40
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels40.png" alt="./old/barAxesAndLabels40.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels41')"><i id="barAxesAndLabels41icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "xAxisLabelsVerticalShift" should work should work for a chart with +ve values only</div>
+  </div>
+  <div id="barAxesAndLabels41" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10,"label":"Jan"},{"value":15,"label":"Feb"},{"value":6,"label":"Mar"},{"value":8,"label":"Apr"}],"showValuesAsTopLabel":true,"xAxisLabelsVerticalShift":20}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels41
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels41.png" alt="./old/barAxesAndLabels41.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels42')"><i id="barAxesAndLabels42icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "xAxisLabelsVerticalShift" should work should work for a chart with both +ve and -ve values</div>
+  </div>
+  <div id="barAxesAndLabels42" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10,"label":"Jan"},{"value":15,"label":"Feb"},{"value":-6,"label":"Mar"},{"value":8,"label":"Apr"},{"value":-4,"label":"May"}],"showValuesAsTopLabel":true,"xAxisLabelsVerticalShift":20}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels42
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels42.png" alt="./old/barAxesAndLabels42.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels43')"><i id="barAxesAndLabels43icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "labelsDistanceFromXaxis" and "xAxisLabelsVerticalShift" should work together for a chart with both +ve and -ve value</div>
+  </div>
+  <div id="barAxesAndLabels43" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10,"label":"Jan"},{"value":15,"label":"Feb"},{"value":-6,"label":"Mar"},{"value":8,"label":"Apr"},{"value":-4,"label":"May"}],"showValuesAsTopLabel":true,"labelsDistanceFromXaxis":30,"xAxisLabelsVerticalShift":20}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels43
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels43.png" alt="./old/barAxesAndLabels43.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels44')"><i id="barAxesAndLabels44icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "labelsExtraHeight" should work for a chart with +ve values only</div>
+  </div>
+  <div id="barAxesAndLabels44" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10,"label":"January 2024"},{"value":15,"label":"February 2024"},{"value":6,"label":"March 2024"},{"value":8,"label":"April 2024"}],"showValuesAsTopLabel":true,"rotateLabel":true,"labelsExtraHeight":60}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels44
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels44.png" alt="./old/barAxesAndLabels44.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels45')"><i id="barAxesAndLabels45icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "noOfSections" should work</div>
+  </div>
+  <div id="barAxesAndLabels45" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsTopLabel":true,"noOfSections":5}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels45
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels45.png" alt="./old/barAxesAndLabels45.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels46')"><i id="barAxesAndLabels46icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "noOfSectionsBelowXAxis" should work</div>
+  </div>
+  <div id="barAxesAndLabels46" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"showValuesAsTopLabel":true,"noOfSections":5,"noOfSectionsBelowXAxis":3}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels46
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels46.png" alt="./old/barAxesAndLabels46.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels47')"><i id="barAxesAndLabels47icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "maxValue" should work</div>
+  </div>
+  <div id="barAxesAndLabels47" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsTopLabel":true,"maxValue":16}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels47
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels47.png" alt="./old/barAxesAndLabels47.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels48')"><i id="barAxesAndLabels48icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "stepValue" should work</div>
+  </div>
+  <div id="barAxesAndLabels48" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsTopLabel":true,"stepValue":4}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels48
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels48.png" alt="./old/barAxesAndLabels48.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels49')"><i id="barAxesAndLabels49icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "noOfSections" and "maxValue" should work together</div>
+  </div>
+  <div id="barAxesAndLabels49" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsTopLabel":true,"noOfSections":5,"maxValue":25}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels49
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels49.png" alt="./old/barAxesAndLabels49.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels5')"><i id="barAxesAndLabels5icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: A chart with only +ve values and "yAxisSide = {yAxisSides.RIGHT}" should have y Axis labels and the Y-axis line at the proper position</div>
+  </div>
+  <div id="barAxesAndLabels5" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsTopLabel":true,"yAxisSide":1}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels5
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels5.png" alt="./old/barAxesAndLabels5.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels50')"><i id="barAxesAndLabels50icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "noOfSections" and "stepValue" should work together</div>
+  </div>
+  <div id="barAxesAndLabels50" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsTopLabel":true,"noOfSections":5,"stepValue":6}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels50
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels50.png" alt="./old/barAxesAndLabels50.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels51')"><i id="barAxesAndLabels51icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "maxValue" and "stepValue" should work together</div>
+  </div>
+  <div id="barAxesAndLabels51" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsTopLabel":true,"stepValue":3,"maxValue":24}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels51
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels51.png" alt="./old/barAxesAndLabels51.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels52')"><i id="barAxesAndLabels52icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "mostNegativeValue" should work</div>
+  </div>
+  <div id="barAxesAndLabels52" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"showValuesAsTopLabel":true,"mostNegativeValue":-12}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels52
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels52.png" alt="./old/barAxesAndLabels52.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels53')"><i id="barAxesAndLabels53icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "negativeStepValue" should work</div>
+  </div>
+  <div id="barAxesAndLabels53" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"showValuesAsTopLabel":true,"negativeStepValue":-3}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels53
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels53.png" alt="./old/barAxesAndLabels53.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels54')"><i id="barAxesAndLabels54icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "noOfSectionsBelowXAxis" and "mostNegativeValue" should work together</div>
+  </div>
+  <div id="barAxesAndLabels54" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"showValuesAsTopLabel":true,"negativeStepValue":-3,"mostNegativeValue":-15}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels54
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels54.png" alt="./old/barAxesAndLabels54.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels55')"><i id="barAxesAndLabels55icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "negativeStepValue" and "noOfSectionsBelowXAxis" should work together</div>
+  </div>
+  <div id="barAxesAndLabels55" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"negativeStepValue":-3,"noOfSectionsBelowXAxis":4}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels55
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels55.png" alt="./old/barAxesAndLabels55.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels56')"><i id="barAxesAndLabels56icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "mostNegativeValue" and "noOfSectionsBelowXAxis" should work together</div>
+  </div>
+  <div id="barAxesAndLabels56" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"mostNegativeValue":-12,"noOfSectionsBelowXAxis":4}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels56
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels56.png" alt="./old/barAxesAndLabels56.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels6')"><i id="barAxesAndLabels6icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: A chart with both +ve and -ve values and "yAxisSide = {yAxisSides.RIGHT}" should have y Axis labels and the Y-axis line at the proper position</div>
+  </div>
+  <div id="barAxesAndLabels6" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"showValuesAsTopLabel":true,"yAxisSide":1}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels6
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels6.png" alt="./old/barAxesAndLabels6.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels7')"><i id="barAxesAndLabels7icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: A chart with "secondaryYaxis" should have the secondary y Axis labels and the Y-axis line at the proper position (given secondary data)</div>
+  </div>
+  <div id="barAxesAndLabels7" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsTopLabel":true,"frontColor":"rgba(0,0,0,0.3)","secondaryYAxis":true,"showLine":true,"lineData":[{"value":0.4},{"value":0.25},{"value":0.6},{"value":0.8}],"lineConfig":{"isSecondary":true,"color":"green"}}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels7
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels7.png" alt="./old/barAxesAndLabels7.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels8')"><i id="barAxesAndLabels8icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: A chart with "secondaryYaxis" and both +ve and -ve values should have the secondary y Axis labels and the Y-axis line at the proper positions both in the 1st and the 4th quadrant</div>
+  </div>
+  <div id="barAxesAndLabels8" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"showValuesAsTopLabel":true,"frontColor":"rgba(0,0,0,0.3)","secondaryYAxis":true,"showLine":true,"lineData":[{"value":0.4},{"value":0.25},{"value":-0.6},{"value":0.8}],"lineConfig":{"isSecondary":true,"color":"green"}}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels8
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels8.png" alt="./old/barAxesAndLabels8.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('barAxesAndLabels9')"><i id="barAxesAndLabels9icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">BarChart: "yAxisExtraHeight" should add extra height to the chart when "height" is NOT given</div>
+  </div>
+  <div id="barAxesAndLabels9" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsTopLabel":true,"yAxisExtraHeight":40}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> barAxesAndLabels9
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/barAxesAndLabels9.png" alt="./old/barAxesAndLabels9.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels1')"><i id="lineAxesAndLabels1icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: A chart with only +ve values should have y Axis labels and the Y-axis line at the proper position</div>
+  </div>
+  <div id="lineAxesAndLabels1" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsDataPointsText":true,"textFontSize":14,"textColor":"blue","textShiftY":-10}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels1
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels1.png" alt="./old/lineAxesAndLabels1.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels10')"><i id="lineAxesAndLabels10icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "yAxisExtraHeight" should add extra height to the chart when height is given</div>
+  </div>
+  <div id="lineAxesAndLabels10" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsDataPointsText":true,"textFontSize":14,"textColor":"blue","textShiftY":-10,"yAxisExtraHeight":40,"height":260}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels10
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels10.png" alt="./old/lineAxesAndLabels10.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels11')"><i id="lineAxesAndLabels11icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "yAxisLabelWidth" prop should change the width of the y-Axis label and should horizontally shift the chart gracefully</div>
+  </div>
+  <div id="lineAxesAndLabels11" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsDataPointsText":true,"textFontSize":14,"textColor":"blue","textShiftY":-10,"yAxisLabelWidth":50}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels11
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels11.png" alt="./old/lineAxesAndLabels11.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels12')"><i id="lineAxesAndLabels12icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: Check alignment of the right side y-Axis line and labels when using the "yAxisLabelWidth" prop along with "yAxisSide = {yAxisSides.RIGHT}"</div>
+  </div>
+  <div id="lineAxesAndLabels12" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsDataPointsText":true,"textFontSize":14,"textColor":"blue","textShiftY":-10,"yAxisSide":1,"yAxisLabelWidth":50}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels12
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels12.png" alt="./old/lineAxesAndLabels12.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels13')"><i id="lineAxesAndLabels13icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "trimYAxisAtTop" should shorten the Y axis from top without shifting the labels, chart or rules</div>
+  </div>
+  <div id="lineAxesAndLabels13" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsDataPointsText":true,"textFontSize":14,"textColor":"blue","textShiftY":-10,"trimYAxisAtTop":true}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels13
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels13.png" alt="./old/lineAxesAndLabels13.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels14')"><i id="lineAxesAndLabels14icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "trimYAxisAtTop" should shorten the Y axis from top for the right side Y-axis when used with "yAxisSide = {yAxisSides.RIGHT}"</div>
+  </div>
+  <div id="lineAxesAndLabels14" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsDataPointsText":true,"textFontSize":14,"textColor":"blue","textShiftY":-10,"trimYAxisAtTop":true,"yAxisSide":1}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels14
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels14.png" alt="./old/lineAxesAndLabels14.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels15')"><i id="lineAxesAndLabels15icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "trimYAxisAtTop" should shorten both sides Y-axis when using the secondary Y axis</div>
+  </div>
+  <div id="lineAxesAndLabels15" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsDataPointsText":true,"textFontSize":14,"textColor":"blue","textShiftY":-10,"secondaryYAxis":{},"secondaryData":[{"value":0.4},{"value":0.25},{"value":0.6},{"value":0.8}],"trimYAxisAtTop":true}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels15
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels15.png" alt="./old/lineAxesAndLabels15.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels16')"><i id="lineAxesAndLabels16icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "yAxisLabelPrefix" should add the prefix to Y-axis labels</div>
+  </div>
+  <div id="lineAxesAndLabels16" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsDataPointsText":true,"textFontSize":14,"textColor":"blue","textShiftY":-10,"yAxisLabelPrefix":"$"}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels16
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels16.png" alt="./old/lineAxesAndLabels16.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels17')"><i id="lineAxesAndLabels17icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "yAxisLabelSuffix" should add the suffix to Y-axis labels</div>
+  </div>
+  <div id="lineAxesAndLabels17" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsDataPointsText":true,"textFontSize":14,"textColor":"blue","textShiftY":-10,"yAxisLabelSuffix":"k"}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels17
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels17.png" alt="./old/lineAxesAndLabels17.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels18')"><i id="lineAxesAndLabels18icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: Both "yAxisLabelPrefix" and "yAxisLabelSuffix" should work together</div>
+  </div>
+  <div id="lineAxesAndLabels18" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsDataPointsText":true,"textFontSize":14,"textColor":"blue","textShiftY":-10,"yAxisLabelPrefix":"$","yAxisLabelSuffix":"k"}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels18
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels18.png" alt="./old/lineAxesAndLabels18.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels19')"><i id="lineAxesAndLabels19icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: Both "yAxisLabelPrefix" and "yAxisLabelSuffix" should work together for chart with both +ve & -ve values</div>
+  </div>
+  <div id="lineAxesAndLabels19" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"showValuesAsDataPointsText":true,"textFontSize":14,"textColor":"blue","textShiftY":-10,"yAxisLabelPrefix":"$","yAxisLabelSuffix":"k"}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels19
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels19.png" alt="./old/lineAxesAndLabels19.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels2')"><i id="lineAxesAndLabels2icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: A chart with both +ve and -ve values should have y Axis labels and the Y-axis line at the proper positions both in the 1st and the 4th quadrant</div>
+  </div>
+  <div id="lineAxesAndLabels2" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"showValuesAsDataPointsText":true,"textFontSize":14,"textColor":"blue","textShiftY":-10}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels2
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels2.png" alt="./old/lineAxesAndLabels2.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels20')"><i id="lineAxesAndLabels20icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: Both "yAxisLabelPrefix" and "yAxisLabelSuffix" should work together for chart with fractional values</div>
+  </div>
+  <div id="lineAxesAndLabels20" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":0.4},{"value":0.25},{"value":0.6},{"value":0.8}],"showValuesAsDataPointsText":true,"textFontSize":14,"textColor":"blue","textShiftY":-10,"yAxisLabelPrefix":"$","yAxisLabelSuffix":"k"}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels20
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels20.png" alt="./old/lineAxesAndLabels20.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels21')"><i id="lineAxesAndLabels21icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "formatYLabel" should format the Y-axis labels</div>
+  </div>
+  <div id="lineAxesAndLabels21" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"showValuesAsDataPointsText":true,"textFontSize":14,"textColor":"blue","textShiftY":-10}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels21
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels21.png" alt="./old/lineAxesAndLabels21.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels22')"><i id="lineAxesAndLabels22icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "formatYLabel" should work on top of "yAxisLabelPrefix" and "yAxisLabelSuffix"</div>
+  </div>
+  <div id="lineAxesAndLabels22" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"showValuesAsDataPointsText":true,"textFontSize":14,"textColor":"blue","textShiftY":-10,"yAxisLabelPrefix":"$","yAxisLabelSuffix":"k","yAxisLabelWidth":60}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels22
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels22.png" alt="./old/lineAxesAndLabels22.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels23')"><i id="lineAxesAndLabels23icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "rulesLength" prop should work for a chart with +ve values only</div>
+  </div>
+  <div id="lineAxesAndLabels23" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsDataPointsText":true,"rulesLength":140}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels23
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels23.png" alt="./old/lineAxesAndLabels23.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels24')"><i id="lineAxesAndLabels24icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "rulesLength" prop should work for a chart with both +ve and -ve values</div>
+  </div>
+  <div id="lineAxesAndLabels24" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"showValuesAsDataPointsText":true,"rulesLength":140}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels24
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels24.png" alt="./old/lineAxesAndLabels24.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels25')"><i id="lineAxesAndLabels25icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: Reference line 1 should work for a chart with +ve values only</div>
+  </div>
+  <div id="lineAxesAndLabels25" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsDataPointsText":true,"showReferenceLine1":true,"referenceLine1Position":12}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels25
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels25.png" alt="./old/lineAxesAndLabels25.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels26')"><i id="lineAxesAndLabels26icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: Reference line 1 should work for a chart with both +ve and -ve values</div>
+  </div>
+  <div id="lineAxesAndLabels26" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"showValuesAsDataPointsText":true,"rulesLength":140,"showReferenceLine1":true,"referenceLine1Position":12}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels26
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels26.png" alt="./old/lineAxesAndLabels26.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels27')"><i id="lineAxesAndLabels27icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: Reference line 2 should work for a chart with +ve values only</div>
+  </div>
+  <div id="lineAxesAndLabels27" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsDataPointsText":true,"showReferenceLine1":true,"referenceLine1Position":12,"showReferenceLine2":true,"referenceLine2Position":7}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels27
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels27.png" alt="./old/lineAxesAndLabels27.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels28')"><i id="lineAxesAndLabels28icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: Reference line 2 should work for a chart with both +ve and -ve values</div>
+  </div>
+  <div id="lineAxesAndLabels28" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"showValuesAsDataPointsText":true,"rulesLength":140,"showReferenceLine1":true,"referenceLine1Position":12,"showReferenceLine2":true,"referenceLine2Position":7}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels28
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels28.png" alt="./old/lineAxesAndLabels28.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels29')"><i id="lineAxesAndLabels29icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "referenceLinesOverChartContent" should render reference lines over chart content</div>
+  </div>
+  <div id="lineAxesAndLabels29" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"showValuesAsDataPointsText":true,"rulesLength":140,"showReferenceLine1":true,"referenceLine1Position":12,"showReferenceLine2":true,"referenceLine2Position":7,"referenceLinesOverChartContent":true}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels29
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels29.png" alt="./old/lineAxesAndLabels29.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels3')"><i id="lineAxesAndLabels3icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: A chart with only +ve values, all values less than 1 should show fractional labels on the y Axis</div>
+  </div>
+  <div id="lineAxesAndLabels3" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":0.4},{"value":0.25},{"value":0.6},{"value":0.8}],"showValuesAsDataPointsText":true,"textFontSize":14,"textColor":"blue","textShiftY":-10}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels3
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels3.png" alt="./old/lineAxesAndLabels3.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels30')"><i id="lineAxesAndLabels30icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "showVerticalLines" should work</div>
+  </div>
+  <div id="lineAxesAndLabels30" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsDataPointsText":true,"showVerticalLines":true}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels30
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels30.png" alt="./old/lineAxesAndLabels30.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels31')"><i id="lineAxesAndLabels31icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "verticalLinesHeight" should work</div>
+  </div>
+  <div id="lineAxesAndLabels31" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsDataPointsText":true,"showVerticalLines":true,"verticalLinesHeight":160}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels31
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels31.png" alt="./old/lineAxesAndLabels31.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels32')"><i id="lineAxesAndLabels32icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "verticalLinesShift" should work</div>
+  </div>
+  <div id="lineAxesAndLabels32" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsDataPointsText":true,"showVerticalLines":true,"verticalLinesShift":20}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels32
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels32.png" alt="./old/lineAxesAndLabels32.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels33')"><i id="lineAxesAndLabels33icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "noOfVerticalLines" should work</div>
+  </div>
+  <div id="lineAxesAndLabels33" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsDataPointsText":true,"showVerticalLines":true,"noOfVerticalLines":3}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels33
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels33.png" alt="./old/lineAxesAndLabels33.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels34')"><i id="lineAxesAndLabels34icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "verticalLinesSpacing" should work</div>
+  </div>
+  <div id="lineAxesAndLabels34" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsDataPointsText":true,"showVerticalLines":true,"verticalLinesSpacing":25}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels34
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels34.png" alt="./old/lineAxesAndLabels34.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels35')"><i id="lineAxesAndLabels35icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "rotateLabel" should work for a chart with +ve values only</div>
+  </div>
+  <div id="lineAxesAndLabels35" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10,"label":"Jan"},{"value":15,"label":"Feb"},{"value":6,"label":"Mar"},{"value":8,"label":"Apr"}],"showValuesAsDataPointsText":true,"rotateLabel":true}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels35
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels35.png" alt="./old/lineAxesAndLabels35.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels36')"><i id="lineAxesAndLabels36icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "rotateLabel" should work for a chart with both +ve and -ve values</div>
+  </div>
+  <div id="lineAxesAndLabels36" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10,"label":"Jan"},{"value":15,"label":"Feb"},{"value":-6,"label":"Mar"},{"value":8,"label":"Apr"},{"value":-4,"label":"May"}],"showValuesAsDataPointsText":true,"rotateLabel":true}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels36
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels36.png" alt="./old/lineAxesAndLabels36.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels37')"><i id="lineAxesAndLabels37icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "xAxisTextNumberOfLines" should work</div>
+  </div>
+  <div id="lineAxesAndLabels37" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10,"label":"January 2024"},{"value":15,"label":"February 2024"},{"value":6,"label":"March 2024"},{"value":8,"label":"April 2024"}],"showValuesAsDataPointsText":true,"xAxisTextNumberOfLines":2}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels37
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels37.png" alt="./old/lineAxesAndLabels37.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels38')"><i id="lineAxesAndLabels38icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "xAxisLabelsHeight" should work</div>
+  </div>
+  <div id="lineAxesAndLabels38" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10,"label":"January 2024"},{"value":15,"label":"February 2024"},{"value":6,"label":"March 2024"},{"value":8,"label":"April 2024"}],"showValuesAsDataPointsText":true,"xAxisTextNumberOfLines":2,"xAxisLabelsHeight":100}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels38
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels38.png" alt="./old/lineAxesAndLabels38.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels39')"><i id="lineAxesAndLabels39icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "xAxisLabelsVerticalShift" should work should work for a chart with +ve values only</div>
+  </div>
+  <div id="lineAxesAndLabels39" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10,"label":"Jan"},{"value":15,"label":"Feb"},{"value":6,"label":"Mar"},{"value":8,"label":"Apr"}],"showValuesAsDataPointsText":true,"xAxisLabelsVerticalShift":20}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels39
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels39.png" alt="./old/lineAxesAndLabels39.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels4')"><i id="lineAxesAndLabels4icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: A chart with only +ve values, with values range less than 1 should show fractional labels on the y Axis (given apt "yAxisOffset")</div>
+  </div>
+  <div id="lineAxesAndLabels4" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":90.2},{"value":90.5},{"value":90.3},{"value":90.8}],"showValuesAsDataPointsText":true,"textFontSize":14,"textColor":"blue","textShiftY":-10,"yAxisOffset":90}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels4
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels4.png" alt="./old/lineAxesAndLabels4.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels40')"><i id="lineAxesAndLabels40icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "xAxisLabelsVerticalShift" should work should work for a chart with both +ve and -ve values</div>
+  </div>
+  <div id="lineAxesAndLabels40" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10,"label":"Jan"},{"value":15,"label":"Feb"},{"value":-6,"label":"Mar"},{"value":8,"label":"Apr"},{"value":-4,"label":"May"}],"showValuesAsDataPointsText":true,"xAxisLabelsVerticalShift":20}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels40
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels40.png" alt="./old/lineAxesAndLabels40.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels41')"><i id="lineAxesAndLabels41icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "labelsExtraHeight" should work for a chart with +ve values only</div>
+  </div>
+  <div id="lineAxesAndLabels41" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10,"label":"January 2024"},{"value":15,"label":"February 2024"},{"value":6,"label":"March 2024"},{"value":8,"label":"April 2024"}],"showValuesAsDataPointsText":true,"rotateLabel":true,"labelsExtraHeight":60}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels41
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels41.png" alt="./old/lineAxesAndLabels41.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels42')"><i id="lineAxesAndLabels42icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "noOfSections" should work</div>
+  </div>
+  <div id="lineAxesAndLabels42" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsDataPointsText":true,"noOfSections":5}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels42
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels42.png" alt="./old/lineAxesAndLabels42.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels43')"><i id="lineAxesAndLabels43icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "noOfSectionsBelowXAxis" should work</div>
+  </div>
+  <div id="lineAxesAndLabels43" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"showValuesAsDataPointsText":true,"noOfSections":5,"noOfSectionsBelowXAxis":3}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels43
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels43.png" alt="./old/lineAxesAndLabels43.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels44')"><i id="lineAxesAndLabels44icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "maxValue" should work</div>
+  </div>
+  <div id="lineAxesAndLabels44" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsDataPointsText":true,"maxValue":16}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels44
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels44.png" alt="./old/lineAxesAndLabels44.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels45')"><i id="lineAxesAndLabels45icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "stepValue" should work</div>
+  </div>
+  <div id="lineAxesAndLabels45" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsDataPointsText":true,"stepValue":4}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels45
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels45.png" alt="./old/lineAxesAndLabels45.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels46')"><i id="lineAxesAndLabels46icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "noOfSections" and "maxValue" should work together</div>
+  </div>
+  <div id="lineAxesAndLabels46" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsDataPointsText":true,"noOfSections":5,"maxValue":25}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels46
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels46.png" alt="./old/lineAxesAndLabels46.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels47')"><i id="lineAxesAndLabels47icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "noOfSections" and "stepValue" should work together</div>
+  </div>
+  <div id="lineAxesAndLabels47" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsDataPointsText":true,"noOfSections":5,"stepValue":6}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels47
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels47.png" alt="./old/lineAxesAndLabels47.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels48')"><i id="lineAxesAndLabels48icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "maxValue" and "stepValue" should work together</div>
+  </div>
+  <div id="lineAxesAndLabels48" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsDataPointsText":true,"stepValue":3,"maxValue":24}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels48
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels48.png" alt="./old/lineAxesAndLabels48.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels49')"><i id="lineAxesAndLabels49icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "mostNegativeValue" should work</div>
+  </div>
+  <div id="lineAxesAndLabels49" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"showValuesAsDataPointsText":true,"mostNegativeValue":-12}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels49
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels49.png" alt="./old/lineAxesAndLabels49.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels5')"><i id="lineAxesAndLabels5icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: A chart with only +ve values and "yAxisSide = {yAxisSides.RIGHT}" should have y Axis labels and the Y-axis line at the proper position</div>
+  </div>
+  <div id="lineAxesAndLabels5" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsDataPointsText":true,"textFontSize":14,"textColor":"blue","textShiftY":-10,"yAxisSide":1}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels5
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels5.png" alt="./old/lineAxesAndLabels5.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels50')"><i id="lineAxesAndLabels50icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "negativeStepValue" should work</div>
+  </div>
+  <div id="lineAxesAndLabels50" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"showValuesAsDataPointsText":true,"negativeStepValue":-3}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels50
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels50.png" alt="./old/lineAxesAndLabels50.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels51')"><i id="lineAxesAndLabels51icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "noOfSectionsBelowXAxis" and "mostNegativeValue" should work together</div>
+  </div>
+  <div id="lineAxesAndLabels51" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"showValuesAsDataPointsText":true,"negativeStepValue":-3,"mostNegativeValue":-15}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels51
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels51.png" alt="./old/lineAxesAndLabels51.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels52')"><i id="lineAxesAndLabels52icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "negativeStepValue" and "noOfSectionsBelowXAxis" should work together</div>
+  </div>
+  <div id="lineAxesAndLabels52" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"negativeStepValue":-3,"noOfSectionsBelowXAxis":4}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels52
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels52.png" alt="./old/lineAxesAndLabels52.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels53')"><i id="lineAxesAndLabels53icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "mostNegativeValue" and "noOfSectionsBelowXAxis" should work together</div>
+  </div>
+  <div id="lineAxesAndLabels53" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"mostNegativeValue":-12,"noOfSectionsBelowXAxis":4}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels53
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels53.png" alt="./old/lineAxesAndLabels53.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels6')"><i id="lineAxesAndLabels6icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: A chart with both +ve and -ve values and "yAxisSide = {yAxisSides.RIGHT}" should have y Axis labels and the Y-axis line at the proper position</div>
+  </div>
+  <div id="lineAxesAndLabels6" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"showValuesAsDataPointsText":true,"textFontSize":14,"textColor":"blue","textShiftY":-10,"yAxisSide":1}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels6
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels6.png" alt="./old/lineAxesAndLabels6.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels7')"><i id="lineAxesAndLabels7icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: A chart with "secondaryYaxis" should have the secondary y Axis labels and the Y-axis line at the proper position (given secondary data)</div>
+  </div>
+  <div id="lineAxesAndLabels7" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsDataPointsText":true,"textFontSize":14,"textColor":"blue","textShiftY":-10,"secondaryYAxis":{},"secondaryData":[{"value":0.4},{"value":0.25},{"value":0.6},{"value":0.8}]}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels7
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels7.png" alt="./old/lineAxesAndLabels7.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels8')"><i id="lineAxesAndLabels8icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: A chart with "secondaryYaxis" and both +ve and -ve values should have the secondary y Axis labels and the Y-axis line at the proper positions both in the 1st and the 4th quadrant</div>
+  </div>
+  <div id="lineAxesAndLabels8" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":-6},{"value":8},{"value":-4}],"showValuesAsDataPointsText":true,"textFontSize":14,"textColor":"blue","textShiftY":-10,"secondaryYAxis":{},"secondaryData":[{"value":0.4},{"value":0.25},{"value":-0.6},{"value":0.8}]}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels8
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels8.png" alt="./old/lineAxesAndLabels8.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels9')"><i id="lineAxesAndLabels9icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: "yAxisExtraHeight" should add extra height to the chart when height is NOT given</div>
+  </div>
+  <div id="lineAxesAndLabels9" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":10},{"value":15},{"value":6},{"value":8}],"showValuesAsDataPointsText":true,"textFontSize":14,"textColor":"blue","textShiftY":-10,"yAxisExtraHeight":40}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels9
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels9.png" alt="./old/lineAxesAndLabels9.png"/>
+          </div>
+          </div>`
+                  async function update (path,id,maxWidth) {
+                    await fetch(`http://127.0.0.1:8080/update?path=${path}&id=${id}&maxWidth=${maxWidth}`)
+                  }
+                  async function accept (path,id,maxWidth) {
+                      const res = confirm('Accept the change?')
+                      if(!res) return
+                      await update(path,id,maxWidth);
+                      alert('Accepted the change. Please reload the page to see changes!')
+                  }
+                  async function reset (path,maxWidth) {
+                    await fetch(`http://127.0.0.1:8080/reset?path=${path}&maxWidth=${maxWidth}`)
+                  }
+                  async function acceptAll (path,maxWidth) {
+                    const res = confirm('Accept all changes?')
+                    if(!res) return
+                    await reset(path,maxWidth);
+                    alert('All changes accepted. Please reload the page to see changes!')
+                }
+                function onShowHide(id){
+                  const node = document.getElementById(id)
+                  const icon = document.getElementById(id+'icon')
+                  const style = node.getAttribute("style")
+                  if(style){
+                    node.setAttribute('style','')
+                    icon.setAttribute('class','fa fa-chevron-up')
+                  }
+                  else{
+                    node.setAttribute('style','display: none')
+                    icon.setAttribute('class','fa fa-chevron-down')
+                  }
+                }
+                function showAll() {
+                  document.getElementById("mainBody").innerHTML = diffHtmlString + passedHtmlString
+                  document.getElementById("chk").checked = false
+                }
+                function showDiff() {
+                  document.getElementById("mainBody").innerHTML = diffHtmlString
+                  document.getElementById("chk").checked = false
+                }
+                function showPassed() {
+                  document.getElementById("mainBody").innerHTML = passedHtmlString
+                  document.getElementById("chk").checked = false
+                }
+                function onloaded () {
+                  let node = document.getElementById('acceptAll')
+                  node.setAttribute("style","display: none")
+  
+                  const bdy = document.getElementsByTagName('body')[0]
+                  let style = bdy.getAttribute('style')
+                  bdy.setAttribute('style',style+` border: 10px solid #C6E0C4`)
+  
+                  node = document.getElementById('header')
+                  style = node.getAttribute('style')
+                  node.setAttribute('style', style+` background-color: #C6E0C4`)
+
+                  node = document.getElementById('reportBox')
+                  style = node.getAttribute('style')
+                  node.setAttribute('style', style+` background-color: #001e03`)
+
+                  showAll();
+                }
+
+                function toggle() {
+                  const nodes = document.getElementsByClassName('imgContainer')
+                  if(nodes && nodes.length){
+                    Array.from(nodes).forEach(node=>{
+                      style = node.getAttribute('style')
+                      node.setAttribute('style', style.includes('none') ? style.replace('none','flex') : style.replace('flex','none'))
+                    })
+                  }
+                }
+              </script>
+          </head>
+  
+          <body onload="onloaded()" style="overflow: hidden; padding-bottom: 80px; margin: 0;">
+            <div id="header" style="display: flex; justify-content: space-between; padding-bottom: 10px;">
+              <div>
+                <input type="radio" name="choice" onclick="showAll()" checked> All </input>
+                <input type="radio" name="choice" onclick="showDiff()"> Failed </input>
+                <input type="radio" name="choice" onclick="showPassed()"> Passed </input>
+  
+                <div id="acceptAll">
+                    <button style="margin-top: 10px; margin-left: 10px; padding: 6px 16px; background-color: #23569E; color: white; font-size: 14px; font-weight: bold; border-radius: 4px; cursor: pointer;" onclick="acceptAll('../../../ss-test',500)">
+                      Accept all changes
+                    </button>
+                </div>
+
+                <div style="margin-top: 10px;">
+                    <input id="chk" type="checkbox" onchange="toggle()">Hide images</input>
+                </div>
+              </div>
+  
+              <div id="reportBox" style="padding: 10px 24px; border-radius: 2px; width: 140px; margin-left: 10px; font-family: Arial, Helvetica, sans-serif;">
+                <div style="color: wheat; display: flex; justify-content: space-between; margin-bottom: 4px;">
+                    <div>Total: </div>
+                    <div>109 </div>
+                </div>
+                <div style="color: #7CE77C; display: flex; justify-content: space-between; margin-bottom: 4px;">
+                    <div>Passed: </div>
+                    <div>109 </div>
+                </div>
+                <div style="color: #F87069; display: flex; justify-content: space-between;">
+                    <div>Failed: </div>
+                    <div>0 </div>
+                </div>
+              </div>
+            </div>
+  
+            <div id="mainBody" style="overflow-y: scroll; height: 100%">
+            </div>
+          </body>
+  </html>
+  
