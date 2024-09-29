@@ -16,7 +16,7 @@
     "react-native-fs": "^2.20.0",
     "react-native-gifted-charts": "^1.4.41",
     "react-native-linear-gradient": "^2.8.3",
-    "react-native-screenshot-test": "^0.0.5",
+    "react-native-screenshot-test": "^0.0.6",
     "react-native-svg": "^15.7.1",
     "react-native-view-shot": "^3.8.0"
   },

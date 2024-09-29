@@ -1,9 +1,32 @@
 import React from 'react';
 import {LineChart, yAxisSides} from 'react-native-gifted-charts';
 
+const positiveData = [{value: 10}, {value: 15}, {value: 6}, {value: 8}]
+const mixedData = [{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]
+const miniData = [{value: 0.4}, {value: 0.25}, {value: 0.6}, {value: 0.8}]
+const labelledPositiveData = [
+  {value: 10, label: 'Jan'},
+  {value: 15, label: 'Feb'},
+  {value: 6, label: 'Mar'},
+  {value: 8, label: 'Apr'},
+]
+const labelledMixedData = [
+  {value: 10, label: 'Jan'},
+  {value: 15, label: 'Feb'},
+  {value: -6, label: 'Mar'},
+  {value: 8, label: 'Apr'},
+  {value: -4, label: 'May'},
+]
+const largeLabbelledData = [
+  {value: 10, label: 'January 2024'},
+  {value: 15, label: 'February 2024'},
+  {value: 6, label: 'March 2024'},
+  {value: 8, label: 'April 2024'},
+]
+
 const lineAxesAndLabels1 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsDataPointsText
     textFontSize={14}
     textColor={'blue'}
@@ -12,7 +35,7 @@ const lineAxesAndLabels1 = () => (
 );
 const lineAxesAndLabels2 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     showValuesAsDataPointsText
     textFontSize={14}
     textColor={'blue'}
@@ -21,7 +44,7 @@ const lineAxesAndLabels2 = () => (
 );
 const lineAxesAndLabels3 = () => (
   <LineChart
-    data={[{value: 0.4}, {value: 0.25}, {value: 0.6}, {value: 0.8}]}
+    data={miniData}
     showValuesAsDataPointsText
     textFontSize={14}
     textColor={'blue'}
@@ -41,7 +64,7 @@ const lineAxesAndLabels4 = () => (
 );
 const lineAxesAndLabels5 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsDataPointsText
     textFontSize={14}
     textColor={'blue'}
@@ -51,7 +74,7 @@ const lineAxesAndLabels5 = () => (
 );
 const lineAxesAndLabels6 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     showValuesAsDataPointsText
     textFontSize={14}
     textColor={'blue'}
@@ -61,18 +84,18 @@ const lineAxesAndLabels6 = () => (
 );
 const lineAxesAndLabels7 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsDataPointsText
     textFontSize={14}
     textColor={'blue'}
     textShiftY={-10}
     secondaryYAxis={{}}
-    secondaryData={[{value: 0.4}, {value: 0.25}, {value: 0.6}, {value: 0.8}]}
+    secondaryData={miniData}
   />
 );
 const lineAxesAndLabels8 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     showValuesAsDataPointsText
     textFontSize={14}
     textColor={'blue'}
@@ -83,7 +106,7 @@ const lineAxesAndLabels8 = () => (
 );
 const lineAxesAndLabels9 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsDataPointsText
     textFontSize={14}
     textColor={'blue'}
@@ -93,7 +116,7 @@ const lineAxesAndLabels9 = () => (
 );
 const lineAxesAndLabels10 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsDataPointsText
     textFontSize={14}
     textColor={'blue'}
@@ -104,7 +127,7 @@ const lineAxesAndLabels10 = () => (
 );
 const lineAxesAndLabels11 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsDataPointsText
     textFontSize={14}
     textColor={'blue'}
@@ -114,7 +137,7 @@ const lineAxesAndLabels11 = () => (
 );
 const lineAxesAndLabels12 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsDataPointsText
     textFontSize={14}
     textColor={'blue'}
@@ -125,7 +148,7 @@ const lineAxesAndLabels12 = () => (
 );
 const lineAxesAndLabels13 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsDataPointsText
     textFontSize={14}
     textColor={'blue'}
@@ -135,7 +158,7 @@ const lineAxesAndLabels13 = () => (
 );
 const lineAxesAndLabels14 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsDataPointsText
     textFontSize={14}
     textColor={'blue'}
@@ -146,19 +169,19 @@ const lineAxesAndLabels14 = () => (
 );
 const lineAxesAndLabels15 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsDataPointsText
     textFontSize={14}
     textColor={'blue'}
     textShiftY={-10}
     secondaryYAxis={{}}
-    secondaryData={[{value: 0.4}, {value: 0.25}, {value: 0.6}, {value: 0.8}]}
+    secondaryData={miniData}
     trimYAxisAtTop
   />
 );
 const lineAxesAndLabels16 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsDataPointsText
     textFontSize={14}
     textColor={'blue'}
@@ -168,7 +191,7 @@ const lineAxesAndLabels16 = () => (
 );
 const lineAxesAndLabels17 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsDataPointsText
     textFontSize={14}
     textColor={'blue'}
@@ -178,7 +201,7 @@ const lineAxesAndLabels17 = () => (
 );
 const lineAxesAndLabels18 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsDataPointsText
     textFontSize={14}
     textColor={'blue'}
@@ -189,7 +212,7 @@ const lineAxesAndLabels18 = () => (
 );
 const lineAxesAndLabels19 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     showValuesAsDataPointsText
     textFontSize={14}
     textColor={'blue'}
@@ -200,7 +223,7 @@ const lineAxesAndLabels19 = () => (
 );
 const lineAxesAndLabels20 = () => (
   <LineChart
-    data={[{value: 0.4}, {value: 0.25}, {value: 0.6}, {value: 0.8}]}
+    data={miniData}
     showValuesAsDataPointsText
     textFontSize={14}
     textColor={'blue'}
@@ -211,7 +234,7 @@ const lineAxesAndLabels20 = () => (
 );
 const lineAxesAndLabels21 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     showValuesAsDataPointsText
     textFontSize={14}
     textColor={'blue'}
@@ -221,7 +244,7 @@ const lineAxesAndLabels21 = () => (
 );
 const lineAxesAndLabels22 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     showValuesAsDataPointsText
     textFontSize={14}
     textColor={'blue'}
@@ -235,7 +258,7 @@ const lineAxesAndLabels22 = () => (
 
 const lineAxesAndLabels23 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsDataPointsText
     rulesLength={140}
   />
@@ -243,7 +266,7 @@ const lineAxesAndLabels23 = () => (
 
 const lineAxesAndLabels24 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     showValuesAsDataPointsText
     rulesLength={140}
   />
@@ -251,7 +274,7 @@ const lineAxesAndLabels24 = () => (
 
 const lineAxesAndLabels25 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsDataPointsText
     showReferenceLine1
     referenceLine1Position={12}
@@ -260,7 +283,7 @@ const lineAxesAndLabels25 = () => (
 
 const lineAxesAndLabels26 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     showValuesAsDataPointsText
     rulesLength={140}
     showReferenceLine1
@@ -270,7 +293,7 @@ const lineAxesAndLabels26 = () => (
 
 const lineAxesAndLabels27 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsDataPointsText
     showReferenceLine1
     referenceLine1Position={12}
@@ -281,7 +304,7 @@ const lineAxesAndLabels27 = () => (
 
 const lineAxesAndLabels28 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     showValuesAsDataPointsText
     rulesLength={140}
     showReferenceLine1
@@ -293,27 +316,27 @@ const lineAxesAndLabels28 = () => (
 
 const lineAxesAndLabels29 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     showValuesAsDataPointsText
     rulesLength={140}
     showReferenceLine1
     referenceLine1Position={12}
     showReferenceLine2
     referenceLine2Position={7}
-    referenceLinesOverChartContent
+    referenceLinesOverChartContent={false}
   />
 );
 
 const lineAxesAndLabels30 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsDataPointsText
     showVerticalLines
   />
 );
 const lineAxesAndLabels31 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsDataPointsText
     showVerticalLines
     verticalLinesHeight={160}
@@ -321,7 +344,7 @@ const lineAxesAndLabels31 = () => (
 );
 const lineAxesAndLabels32 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsDataPointsText
     showVerticalLines
     verticalLinesShift={20}
@@ -330,7 +353,7 @@ const lineAxesAndLabels32 = () => (
 
 const lineAxesAndLabels33 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsDataPointsText
     showVerticalLines
     noOfVerticalLines={3}
@@ -339,7 +362,7 @@ const lineAxesAndLabels33 = () => (
 
 const lineAxesAndLabels34 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsDataPointsText
     showVerticalLines
     verticalLinesSpacing={25}
@@ -348,12 +371,7 @@ const lineAxesAndLabels34 = () => (
 
 const lineAxesAndLabels35 = () => (
   <LineChart
-    data={[
-      {value: 10, label: 'Jan'},
-      {value: 15, label: 'Feb'},
-      {value: 6, label: 'Mar'},
-      {value: 8, label: 'Apr'},
-    ]}
+    data={labelledPositiveData}
     showValuesAsDataPointsText
     rotateLabel
   />
@@ -361,13 +379,7 @@ const lineAxesAndLabels35 = () => (
 
 const lineAxesAndLabels36 = () => (
   <LineChart
-    data={[
-      {value: 10, label: 'Jan'},
-      {value: 15, label: 'Feb'},
-      {value: -6, label: 'Mar'},
-      {value: 8, label: 'Apr'},
-      {value: -4, label: 'May'},
-    ]}
+    data={labelledMixedData}
     showValuesAsDataPointsText
     rotateLabel
   />
@@ -375,12 +387,7 @@ const lineAxesAndLabels36 = () => (
 
 const lineAxesAndLabels37 = () => (
   <LineChart
-    data={[
-      {value: 10, label: 'January 2024'},
-      {value: 15, label: 'February 2024'},
-      {value: 6, label: 'March 2024'},
-      {value: 8, label: 'April 2024'},
-    ]}
+    data={largeLabbelledData}
     showValuesAsDataPointsText
     xAxisTextNumberOfLines={2}
   />
@@ -388,12 +395,7 @@ const lineAxesAndLabels37 = () => (
 
 const lineAxesAndLabels38 = () => (
   <LineChart
-    data={[
-      {value: 10, label: 'January 2024'},
-      {value: 15, label: 'February 2024'},
-      {value: 6, label: 'March 2024'},
-      {value: 8, label: 'April 2024'},
-    ]}
+    data={largeLabbelledData}
     showValuesAsDataPointsText
     xAxisTextNumberOfLines={2}
     xAxisLabelsHeight={100}
@@ -402,12 +404,7 @@ const lineAxesAndLabels38 = () => (
 
 const lineAxesAndLabels39 = () => (
   <LineChart
-    data={[
-      {value: 10, label: 'Jan'},
-      {value: 15, label: 'Feb'},
-      {value: 6, label: 'Mar'},
-      {value: 8, label: 'Apr'},
-    ]}
+    data={labelledPositiveData}
     showValuesAsDataPointsText
     xAxisLabelsVerticalShift={20}
   />
@@ -415,13 +412,7 @@ const lineAxesAndLabels39 = () => (
 
 const lineAxesAndLabels40 = () => (
   <LineChart
-    data={[
-      {value: 10, label: 'Jan'},
-      {value: 15, label: 'Feb'},
-      {value: -6, label: 'Mar'},
-      {value: 8, label: 'Apr'},
-      {value: -4, label: 'May'},
-    ]}
+    data={labelledMixedData}
     showValuesAsDataPointsText
     xAxisLabelsVerticalShift={20}
   />
@@ -429,12 +420,7 @@ const lineAxesAndLabels40 = () => (
 
 const lineAxesAndLabels41 = () => (
   <LineChart
-    data={[
-      {value: 10, label: 'January 2024'},
-      {value: 15, label: 'February 2024'},
-      {value: 6, label: 'March 2024'},
-      {value: 8, label: 'April 2024'},
-    ]}
+    data={largeLabbelledData}
     showValuesAsDataPointsText
     rotateLabel
     labelsExtraHeight={60}
@@ -443,14 +429,14 @@ const lineAxesAndLabels41 = () => (
 
 const lineAxesAndLabels42 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsDataPointsText
     noOfSections={5}
   />
 );
 const lineAxesAndLabels43 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     showValuesAsDataPointsText
     noOfSections={5}
     noOfSectionsBelowXAxis={3}
@@ -458,7 +444,7 @@ const lineAxesAndLabels43 = () => (
 );
 const lineAxesAndLabels44 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsDataPointsText
     maxValue={16}
   />
@@ -466,7 +452,7 @@ const lineAxesAndLabels44 = () => (
 
 const lineAxesAndLabels45 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsDataPointsText
     stepValue={4}
   />
@@ -474,7 +460,7 @@ const lineAxesAndLabels45 = () => (
 
 const lineAxesAndLabels46 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsDataPointsText
     noOfSections={5}
     maxValue={25}
@@ -483,7 +469,7 @@ const lineAxesAndLabels46 = () => (
 
 const lineAxesAndLabels47 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsDataPointsText
     noOfSections={5}
     stepValue={6}
@@ -491,7 +477,7 @@ const lineAxesAndLabels47 = () => (
 );
 const lineAxesAndLabels48 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsDataPointsText
     stepValue={3}
     maxValue={24}
@@ -499,14 +485,14 @@ const lineAxesAndLabels48 = () => (
 );
 const lineAxesAndLabels49 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     showValuesAsDataPointsText
     mostNegativeValue={-12}
   />
 );
 const lineAxesAndLabels50 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     showValuesAsDataPointsText
     negativeStepValue={-3}
   />
@@ -514,7 +500,7 @@ const lineAxesAndLabels50 = () => (
 
 const lineAxesAndLabels51 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     showValuesAsDataPointsText
     negativeStepValue={-3}
     mostNegativeValue={-15}
@@ -523,14 +509,14 @@ const lineAxesAndLabels51 = () => (
 
 const lineAxesAndLabels52 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     negativeStepValue={-3}
     noOfSectionsBelowXAxis={4}
   />
 );
 const lineAxesAndLabels53 = () => (
   <LineChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     mostNegativeValue={-12}
     noOfSectionsBelowXAxis={4}
   />
@@ -736,7 +722,7 @@ export const lineChartTestsArray = [
   {
     component: lineAxesAndLabels29,
     title:
-      'LineChart: "referenceLinesOverChartContent" should render reference lines over chart content',
+      'LineChart: "referenceLinesOverChartContent: false" should render reference lines beneath chart content',
     id: 'lineAxesAndLabels29',
     description: JSON.stringify(lineAxesAndLabels29().props),
   },

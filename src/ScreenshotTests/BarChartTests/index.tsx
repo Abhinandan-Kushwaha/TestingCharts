@@ -1,22 +1,45 @@
 import React from 'react';
 import {BarChart, yAxisSides} from 'react-native-gifted-charts';
 
+const positiveData = [{value: 10}, {value: 15}, {value: 6}, {value: 8}]
+const mixedData = [{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]
+const miniData = [{value: 0.4}, {value: 0.25}, {value: 0.6}, {value: 0.8}]
+const labelledPositiveData = [
+  {value: 10, label: 'Jan'},
+  {value: 15, label: 'Feb'},
+  {value: 6, label: 'Mar'},
+  {value: 8, label: 'Apr'},
+]
+const labelledMixedData = [
+  {value: 10, label: 'Jan'},
+  {value: 15, label: 'Feb'},
+  {value: -6, label: 'Mar'},
+  {value: 8, label: 'Apr'},
+  {value: -4, label: 'May'},
+]
+const largeLabbelledData = [
+  {value: 10, label: 'January 2024'},
+  {value: 15, label: 'February 2024'},
+  {value: 6, label: 'March 2024'},
+  {value: 8, label: 'April 2024'},
+]
+
 const barAxesAndLabels1 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsTopLabel
   />
 );
 
 const barAxesAndLabels2 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     showValuesAsTopLabel
   />
 );
 const barAxesAndLabels3 = () => (
   <BarChart
-    data={[{value: 0.4}, {value: 0.25}, {value: 0.6}, {value: 0.8}]}
+    data={miniData}
     showValuesAsTopLabel
   />
 );
@@ -30,34 +53,34 @@ const barAxesAndLabels4 = () => (
 );
 const barAxesAndLabels5 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsTopLabel
     yAxisSide={yAxisSides.RIGHT}
   />
 );
 const barAxesAndLabels6 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     showValuesAsTopLabel
     yAxisSide={yAxisSides.RIGHT}
   />
 );
 const barAxesAndLabels7 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsTopLabel
-    frontColor={'rgba(0,0,0,0.3)'}
+    frontColor={'skyblue'}
     secondaryYAxis
     showLine
-    lineData={[{value: 0.4}, {value: 0.25}, {value: 0.6}, {value: 0.8}]}
+    lineData={miniData}
     lineConfig={{isSecondary: true, color: 'green'}}
   />
 );
 const barAxesAndLabels8 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     showValuesAsTopLabel
-    frontColor={'rgba(0,0,0,0.3)'}
+    frontColor={'skyblue'}
     secondaryYAxis
     showLine
     lineData={[{value: 0.4}, {value: 0.25}, {value: -0.6}, {value: 0.8}]}
@@ -66,14 +89,14 @@ const barAxesAndLabels8 = () => (
 );
 const barAxesAndLabels9 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsTopLabel
     yAxisExtraHeight={40}
   />
 );
 const barAxesAndLabels10 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsTopLabel
     yAxisExtraHeight={40}
     height={260}
@@ -81,14 +104,14 @@ const barAxesAndLabels10 = () => (
 );
 const barAxesAndLabels11 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsTopLabel
     yAxisLabelWidth={50}
   />
 );
 const barAxesAndLabels12 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsTopLabel
     yAxisSide={yAxisSides.RIGHT}
     yAxisLabelWidth={50}
@@ -96,14 +119,14 @@ const barAxesAndLabels12 = () => (
 );
 const barAxesAndLabels13 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsTopLabel
     trimYAxisAtTop
   />
 );
 const barAxesAndLabels14 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsTopLabel
     trimYAxisAtTop
     yAxisSide={yAxisSides.RIGHT}
@@ -111,33 +134,33 @@ const barAxesAndLabels14 = () => (
 );
 const barAxesAndLabels15 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsTopLabel
-    frontColor={'rgba(0,0,0,0.3)'}
+    frontColor={'skyblue'}
     secondaryYAxis
     showLine
-    lineData={[{value: 0.4}, {value: 0.25}, {value: 0.6}, {value: 0.8}]}
+    lineData={miniData}
     lineConfig={{isSecondary: true, color: 'green'}}
     trimYAxisAtTop
   />
 );
 const barAxesAndLabels16 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsTopLabel
     yAxisLabelPrefix="$"
   />
 );
 const barAxesAndLabels17 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsTopLabel
     yAxisLabelSuffix="k"
   />
 );
 const barAxesAndLabels18 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsTopLabel
     yAxisLabelPrefix="$"
     yAxisLabelSuffix="k"
@@ -145,7 +168,7 @@ const barAxesAndLabels18 = () => (
 );
 const barAxesAndLabels19 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     showValuesAsTopLabel
     yAxisLabelPrefix="$"
     yAxisLabelSuffix="k"
@@ -153,7 +176,7 @@ const barAxesAndLabels19 = () => (
 );
 const barAxesAndLabels20 = () => (
   <BarChart
-    data={[{value: 0.4}, {value: 0.25}, {value: 0.6}, {value: 0.8}]}
+    data={miniData}
     showValuesAsTopLabel
     yAxisLabelPrefix="$"
     yAxisLabelSuffix="k"
@@ -161,14 +184,14 @@ const barAxesAndLabels20 = () => (
 );
 const barAxesAndLabels21 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     showValuesAsTopLabel
     formatYLabel={label => Number(label) * 2 + '/2'}
   />
 );
 const barAxesAndLabels22 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     showValuesAsTopLabel
     formatYLabel={label => Number(label) * 2 + '/2'}
     yAxisLabelPrefix="$"
@@ -178,7 +201,7 @@ const barAxesAndLabels22 = () => (
 );
 const barAxesAndLabels23 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsTopLabel
     rulesLength={140}
   />
@@ -186,7 +209,7 @@ const barAxesAndLabels23 = () => (
 
 const barAxesAndLabels24 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     showValuesAsTopLabel
     rulesLength={140}
   />
@@ -194,8 +217,9 @@ const barAxesAndLabels24 = () => (
 
 const barAxesAndLabels25 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsTopLabel
+    frontColor={'skyblue'}
     showReferenceLine1
     referenceLine1Position={12}
   />
@@ -203,9 +227,10 @@ const barAxesAndLabels25 = () => (
 
 const barAxesAndLabels26 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     showValuesAsTopLabel
     rulesLength={140}
+    frontColor={'skyblue'}
     showReferenceLine1
     referenceLine1Position={12}
   />
@@ -213,8 +238,9 @@ const barAxesAndLabels26 = () => (
 
 const barAxesAndLabels27 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsTopLabel
+    frontColor={'skyblue'}
     showReferenceLine1
     referenceLine1Position={12}
     showReferenceLine2
@@ -224,9 +250,10 @@ const barAxesAndLabels27 = () => (
 
 const barAxesAndLabels28 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     showValuesAsTopLabel
     rulesLength={140}
+    frontColor={'skyblue'}
     showReferenceLine1
     referenceLine1Position={12}
     showReferenceLine2
@@ -236,27 +263,28 @@ const barAxesAndLabels28 = () => (
 
 const barAxesAndLabels29 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     showValuesAsTopLabel
     rulesLength={140}
+    frontColor={'skyblue'}
     showReferenceLine1
     referenceLine1Position={12}
     showReferenceLine2
     referenceLine2Position={7}
-    referenceLinesOverChartContent
+    referenceLinesOverChartContent={false}
   />
 );
 
 const barAxesAndLabels30 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsTopLabel
     showVerticalLines
   />
 );
 const barAxesAndLabels31 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsTopLabel
     showVerticalLines
     verticalLinesHeight={160}
@@ -264,7 +292,7 @@ const barAxesAndLabels31 = () => (
 );
 const barAxesAndLabels32 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsTopLabel
     showVerticalLines
     verticalLinesShift={20}
@@ -273,7 +301,7 @@ const barAxesAndLabels32 = () => (
 
 const barAxesAndLabels33 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsTopLabel
     showVerticalLines
     noOfVerticalLines={3}
@@ -282,7 +310,7 @@ const barAxesAndLabels33 = () => (
 
 const barAxesAndLabels34 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsTopLabel
     showVerticalLines
     verticalLinesSpacing={25}
@@ -291,12 +319,7 @@ const barAxesAndLabels34 = () => (
 
 const barAxesAndLabels35 = () => (
   <BarChart
-    data={[
-      {value: 10, label: 'Jan'},
-      {value: 15, label: 'Feb'},
-      {value: 6, label: 'Mar'},
-      {value: 8, label: 'Apr'},
-    ]}
+    data={labelledPositiveData}
     showValuesAsTopLabel
     rotateLabel
   />
@@ -304,13 +327,7 @@ const barAxesAndLabels35 = () => (
 
 const barAxesAndLabels36 = () => (
   <BarChart
-    data={[
-      {value: 10, label: 'Jan'},
-      {value: 15, label: 'Feb'},
-      {value: -6, label: 'Mar'},
-      {value: 8, label: 'Apr'},
-      {value: -4, label: 'May'},
-    ]}
+    data={labelledMixedData}
     showValuesAsTopLabel
     rotateLabel
   />
@@ -318,12 +335,7 @@ const barAxesAndLabels36 = () => (
 
 const barAxesAndLabels37 = () => (
   <BarChart
-    data={[
-      {value: 10, label: 'Jan'},
-      {value: 15, label: 'Feb'},
-      {value: 6, label: 'Mar'},
-      {value: 8, label: 'Apr'},
-    ]}
+    data={labelledPositiveData}
     showValuesAsTopLabel
     labelsDistanceFromXaxis={20}
   />
@@ -331,13 +343,7 @@ const barAxesAndLabels37 = () => (
 
 const barAxesAndLabels38 = () => (
   <BarChart
-    data={[
-      {value: 10, label: 'Jan'},
-      {value: 15, label: 'Feb'},
-      {value: -6, label: 'Mar'},
-      {value: 8, label: 'Apr'},
-      {value: -4, label: 'May'},
-    ]}
+    data={labelledMixedData}
     showValuesAsTopLabel
     labelsDistanceFromXaxis={20}
   />
@@ -345,12 +351,7 @@ const barAxesAndLabels38 = () => (
 
 const barAxesAndLabels39 = () => (
   <BarChart
-    data={[
-      {value: 10, label: 'January 2024'},
-      {value: 15, label: 'February 2024'},
-      {value: 6, label: 'March 2024'},
-      {value: 8, label: 'April 2024'},
-    ]}
+    data={largeLabbelledData}
     showValuesAsTopLabel
     xAxisTextNumberOfLines={2}
   />
@@ -358,12 +359,7 @@ const barAxesAndLabels39 = () => (
 
 const barAxesAndLabels40 = () => (
   <BarChart
-    data={[
-      {value: 10, label: 'January 2024'},
-      {value: 15, label: 'February 2024'},
-      {value: 6, label: 'March 2024'},
-      {value: 8, label: 'April 2024'},
-    ]}
+    data={largeLabbelledData}
     showValuesAsTopLabel
     xAxisTextNumberOfLines={2}
     xAxisLabelsHeight={100}
@@ -372,12 +368,7 @@ const barAxesAndLabels40 = () => (
 
 const barAxesAndLabels41 = () => (
   <BarChart
-    data={[
-      {value: 10, label: 'Jan'},
-      {value: 15, label: 'Feb'},
-      {value: 6, label: 'Mar'},
-      {value: 8, label: 'Apr'},
-    ]}
+    data={labelledPositiveData}
     showValuesAsTopLabel
     xAxisLabelsVerticalShift={20}
   />
@@ -385,26 +376,14 @@ const barAxesAndLabels41 = () => (
 
 const barAxesAndLabels42 = () => (
   <BarChart
-    data={[
-      {value: 10, label: 'Jan'},
-      {value: 15, label: 'Feb'},
-      {value: -6, label: 'Mar'},
-      {value: 8, label: 'Apr'},
-      {value: -4, label: 'May'},
-    ]}
+    data={labelledMixedData}
     showValuesAsTopLabel
     xAxisLabelsVerticalShift={20}
   />
 );
 const barAxesAndLabels43 = () => (
   <BarChart
-    data={[
-      {value: 10, label: 'Jan'},
-      {value: 15, label: 'Feb'},
-      {value: -6, label: 'Mar'},
-      {value: 8, label: 'Apr'},
-      {value: -4, label: 'May'},
-    ]}
+    data={labelledMixedData}
     showValuesAsTopLabel
     labelsDistanceFromXaxis={30}
     xAxisLabelsVerticalShift={20}
@@ -413,12 +392,7 @@ const barAxesAndLabels43 = () => (
 
 const barAxesAndLabels44 = () => (
   <BarChart
-    data={[
-      {value: 10, label: 'January 2024'},
-      {value: 15, label: 'February 2024'},
-      {value: 6, label: 'March 2024'},
-      {value: 8, label: 'April 2024'},
-    ]}
+    data={largeLabbelledData}
     showValuesAsTopLabel
     rotateLabel
     labelsExtraHeight={60}
@@ -427,14 +401,14 @@ const barAxesAndLabels44 = () => (
 
 const barAxesAndLabels45 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsTopLabel
     noOfSections={5}
   />
 );
 const barAxesAndLabels46 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     showValuesAsTopLabel
     noOfSections={5}
     noOfSectionsBelowXAxis={3}
@@ -442,7 +416,7 @@ const barAxesAndLabels46 = () => (
 );
 const barAxesAndLabels47 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsTopLabel
     maxValue={16}
   />
@@ -450,7 +424,7 @@ const barAxesAndLabels47 = () => (
 
 const barAxesAndLabels48 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsTopLabel
     stepValue={4}
   />
@@ -458,7 +432,7 @@ const barAxesAndLabels48 = () => (
 
 const barAxesAndLabels49 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsTopLabel
     noOfSections={5}
     maxValue={25}
@@ -467,7 +441,7 @@ const barAxesAndLabels49 = () => (
 
 const barAxesAndLabels50 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsTopLabel
     noOfSections={5}
     stepValue={6}
@@ -475,7 +449,7 @@ const barAxesAndLabels50 = () => (
 );
 const barAxesAndLabels51 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: 6}, {value: 8}]}
+    data={positiveData}
     showValuesAsTopLabel
     stepValue={3}
     maxValue={24}
@@ -483,14 +457,14 @@ const barAxesAndLabels51 = () => (
 );
 const barAxesAndLabels52 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     showValuesAsTopLabel
     mostNegativeValue={-12}
   />
 );
 const barAxesAndLabels53 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     showValuesAsTopLabel
     negativeStepValue={-3}
   />
@@ -498,7 +472,7 @@ const barAxesAndLabels53 = () => (
 
 const barAxesAndLabels54 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     showValuesAsTopLabel
     negativeStepValue={-3}
     mostNegativeValue={-15}
@@ -507,14 +481,14 @@ const barAxesAndLabels54 = () => (
 
 const barAxesAndLabels55 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     negativeStepValue={-3}
     noOfSectionsBelowXAxis={4}
   />
 );
 const barAxesAndLabels56 = () => (
   <BarChart
-    data={[{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]}
+    data={mixedData}
     mostNegativeValue={-12}
     noOfSectionsBelowXAxis={4}
   />
@@ -720,7 +694,7 @@ export const barChartTestsArray = [
   {
     component: barAxesAndLabels29,
     title:
-      'BarChart: "referenceLinesOverChartContent" should render reference lines over chart content',
+      'BarChart: "referenceLinesOverChartContent: false" should render reference lines beneath chart content',
     id: 'barAxesAndLabels29',
     description: JSON.stringify(barAxesAndLabels29().props),
   },
