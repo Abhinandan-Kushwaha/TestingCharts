@@ -1,28 +1,34 @@
 import React from 'react';
 import {LineChart, yAxisSides} from 'react-native-gifted-charts';
 
-const positiveData = [{value: 10}, {value: 15}, {value: 6}, {value: 8}]
-const mixedData = [{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]
-const miniData = [{value: 0.4}, {value: 0.25}, {value: 0.6}, {value: 0.8}]
+const positiveData = [{value: 10}, {value: 15}, {value: 6}, {value: 8}];
+const mixedData = [
+  {value: 10},
+  {value: 15},
+  {value: -6},
+  {value: 8},
+  {value: -4},
+];
+const miniData = [{value: 0.4}, {value: 0.25}, {value: 0.6}, {value: 0.8}];
 const labelledPositiveData = [
   {value: 10, label: 'Jan'},
   {value: 15, label: 'Feb'},
   {value: 6, label: 'Mar'},
   {value: 8, label: 'Apr'},
-]
+];
 const labelledMixedData = [
   {value: 10, label: 'Jan'},
   {value: 15, label: 'Feb'},
   {value: -6, label: 'Mar'},
   {value: 8, label: 'Apr'},
   {value: -4, label: 'May'},
-]
+];
 const largeLabbelledData = [
   {value: 10, label: 'January 2024'},
   {value: 15, label: 'February 2024'},
   {value: 6, label: 'March 2024'},
   {value: 8, label: 'April 2024'},
-]
+];
 
 const lineAxesAndLabels1 = () => (
   <LineChart
@@ -257,19 +263,11 @@ const lineAxesAndLabels22 = () => (
 );
 
 const lineAxesAndLabels23 = () => (
-  <LineChart
-    data={positiveData}
-    showValuesAsDataPointsText
-    rulesLength={140}
-  />
+  <LineChart data={positiveData} showValuesAsDataPointsText rulesLength={140} />
 );
 
 const lineAxesAndLabels24 = () => (
-  <LineChart
-    data={mixedData}
-    showValuesAsDataPointsText
-    rulesLength={140}
-  />
+  <LineChart data={mixedData} showValuesAsDataPointsText rulesLength={140} />
 );
 
 const lineAxesAndLabels25 = () => (
@@ -328,11 +326,7 @@ const lineAxesAndLabels29 = () => (
 );
 
 const lineAxesAndLabels30 = () => (
-  <LineChart
-    data={positiveData}
-    showValuesAsDataPointsText
-    showVerticalLines
-  />
+  <LineChart data={positiveData} showValuesAsDataPointsText showVerticalLines />
 );
 const lineAxesAndLabels31 = () => (
   <LineChart
@@ -378,11 +372,7 @@ const lineAxesAndLabels35 = () => (
 );
 
 const lineAxesAndLabels36 = () => (
-  <LineChart
-    data={labelledMixedData}
-    showValuesAsDataPointsText
-    rotateLabel
-  />
+  <LineChart data={labelledMixedData} showValuesAsDataPointsText rotateLabel />
 );
 
 const lineAxesAndLabels37 = () => (
@@ -428,11 +418,7 @@ const lineAxesAndLabels41 = () => (
 );
 
 const lineAxesAndLabels42 = () => (
-  <LineChart
-    data={positiveData}
-    showValuesAsDataPointsText
-    noOfSections={5}
-  />
+  <LineChart data={positiveData} showValuesAsDataPointsText noOfSections={5} />
 );
 const lineAxesAndLabels43 = () => (
   <LineChart
@@ -443,19 +429,11 @@ const lineAxesAndLabels43 = () => (
   />
 );
 const lineAxesAndLabels44 = () => (
-  <LineChart
-    data={positiveData}
-    showValuesAsDataPointsText
-    maxValue={16}
-  />
+  <LineChart data={positiveData} showValuesAsDataPointsText maxValue={16} />
 );
 
 const lineAxesAndLabels45 = () => (
-  <LineChart
-    data={positiveData}
-    showValuesAsDataPointsText
-    stepValue={4}
-  />
+  <LineChart data={positiveData} showValuesAsDataPointsText stepValue={4} />
 );
 
 const lineAxesAndLabels46 = () => (
@@ -519,6 +497,27 @@ const lineAxesAndLabels53 = () => (
     data={mixedData}
     mostNegativeValue={-12}
     noOfSectionsBelowXAxis={4}
+  />
+);
+
+const lineAxesAndLabels54 = () => (
+  <LineChart
+    data={mixedData}
+    data2={positiveData}
+    areaChart
+    startFillColor1="red"
+    startFillColor2="green"
+    zIndex1={1}
+  />
+);
+
+const lineAxesAndLabels55 = () => (
+  <LineChart
+    dataSet={[
+      {data: mixedData, zIndex: 1, startFillColor: 'red'},
+      {data: positiveData, startFillColor: 'green'},
+    ]}
+    areaChart
   />
 );
 
@@ -878,5 +877,18 @@ export const lineChartTestsArray = [
       'LineChart: "mostNegativeValue" and "noOfSectionsBelowXAxis" should work together',
     id: 'lineAxesAndLabels53',
     description: JSON.stringify(lineAxesAndLabels53().props),
+  },
+  {
+    component: lineAxesAndLabels54,
+    title: 'LineChart: "zIndex" should work',
+    id: 'lineAxesAndLabels54',
+    description: JSON.stringify(lineAxesAndLabels54().props),
+  },
+
+  {
+    component: lineAxesAndLabels55,
+    title: 'LineChart: "zIndex" should work with dataSet',
+    id: 'lineAxesAndLabels55',
+    description: JSON.stringify(lineAxesAndLabels55().props),
   },
 ];

@@ -244,7 +244,7 @@ const stackedBarAxesAndLabels4 = () => (
   <BarChart
     stackData={largeValuesPositiveStack}
     showValuesAsTopLabel
-    yAxisOffset={270}
+    yAxisOffset={50}
   />
 );
 const stackedBarAxesAndLabels5 = () => (
