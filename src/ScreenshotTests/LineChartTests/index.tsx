@@ -1,4 +1,5 @@
 import React from 'react';
+import {View, Text} from 'react-native';
 import {LineChart, yAxisSides} from 'react-native-gifted-charts';
 
 const positiveData = [{value: 10}, {value: 15}, {value: 6}, {value: 8}];
@@ -521,6 +522,73 @@ const lineAxesAndLabels55 = () => (
   />
 );
 
+export const lineAxesAndLabels56 = () => (
+  <LineChart
+    data={positiveData}
+    pointerConfig={{
+      pointerStripHeight: 180,
+      pointerLabelWidth: 30,
+      initialPointerIndex: 1,
+      pointerLabelComponent: (items: any) => (
+        <View style={{borderWidth: 1, borderRadius: 4}}>
+          <Text style={{textAlign: 'center'}}>{items[0].value}</Text>
+        </View>
+      ),
+    }}
+  />
+);
+
+export const lineAxesAndLabels57 = () => (
+  <LineChart
+    data={labelledPositiveData}
+    pointerConfig={{
+      pointerStripHeight: 180,
+      pointerLabelWidth: 30,
+      initialPointerIndex: 1,
+      pointerLabelComponent: (items: any) => (
+        <View style={{borderWidth: 1, borderRadius: 4}}>
+          <Text style={{textAlign: 'center'}}>{items[0].label}</Text>
+        </View>
+      ),
+      horizontalStripConfig: {
+        labelComponentHeight: 20,
+        labelComponent: (items: any) => (
+          <View
+            style={{borderWidth: 1, borderRadius: 4, backgroundColor: 'white'}}>
+            <Text style={{textAlign: 'center'}}>{items[0].value}</Text>
+          </View>
+        ),
+      },
+    }}
+  />
+);
+
+export const lineAxesAndLabels58 = () => (
+  <LineChart
+    data={labelledPositiveData}
+    width={200}
+    pointerConfig={{
+      pointerStripHeight: 180,
+      pointerLabelWidth: 30,
+      initialPointerIndex: 1,
+      pointerLabelComponent: (items: any) => (
+        <View style={{borderWidth: 1, borderRadius: 4}}>
+          <Text style={{textAlign: 'center'}}>{items[0].label}</Text>
+        </View>
+      ),
+      horizontalStripConfig: {
+        labelComponentHeight: 20,
+        labelComponent: (items: any) => (
+          <View
+            style={{borderWidth: 1, borderRadius: 4, backgroundColor: 'white'}}>
+            <Text style={{textAlign: 'center'}}>{items[0].value}</Text>
+          </View>
+        ),
+      },
+    }}
+  />
+);
+
 export const lineChartTestsArray = [
   {
     component: lineAxesAndLabels1,
@@ -890,5 +958,25 @@ export const lineChartTestsArray = [
     title: 'LineChart: "zIndex" should work with dataSet',
     id: 'lineAxesAndLabels55',
     description: JSON.stringify(lineAxesAndLabels55().props),
+  },
+  {
+    component: lineAxesAndLabels56,
+    title: 'LineChart: pointer should work',
+    id: 'lineAxesAndLabels56',
+    description: JSON.stringify(lineAxesAndLabels56().props),
+  },
+  {
+    component: lineAxesAndLabels57,
+    title: 'LineChart: pointer with horizontal strip should work',
+    id: 'lineAxesAndLabels57',
+    description: JSON.stringify(lineAxesAndLabels57().props),
+  },
+
+  {
+    component: lineAxesAndLabels58,
+    title:
+      'LineChart: pointer with horizontal strip should work when width of chart is given',
+    id: 'lineAxesAndLabels58',
+    description: JSON.stringify(lineAxesAndLabels58().props),
   },
 ];
