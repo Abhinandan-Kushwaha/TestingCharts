@@ -1,5 +1,6 @@
 import React from 'react';
-import {BarChart, yAxisSides} from 'react-native-gifted-charts';
+import {Text, View} from 'react-native';
+import {BarChart, stackDataItem, yAxisSides} from 'react-native-gifted-charts';
 
 const positiveStackData = [
   {
@@ -665,6 +666,73 @@ const stackedBarAxesAndLabels56 = () => (
   />
 );
 
+const stackedBarAxesAndLabels57 = () => (
+  <BarChart
+    stackData={positiveStackData}
+    autoCenterTooltip
+    focusedBarIndex={2}
+    renderTooltip={(item: stackDataItem) => (
+      <View>
+        <Text>{item.stacks[0].value}</Text>
+      </View>
+    )}
+  />
+);
+
+const stackedBarAxesAndLabels58 = () => (
+  <BarChart
+    stackData={mixedStackData}
+    autoCenterTooltip
+    focusedBarIndex={2}
+    renderTooltip={(item: stackDataItem) => (
+      <View>
+        <Text>{item.stacks[0].value}</Text>
+      </View>
+    )}
+  />
+);
+
+const stackedBarAxesAndLabels59 = () => (
+  <BarChart
+    stackData={mixedStackData}
+    autoCenterTooltip
+    focusedBarIndex={0}
+    renderTooltip={(item: stackDataItem) => (
+      <View>
+        <Text>{item.stacks[0].value}</Text>
+      </View>
+    )}
+  />
+);
+
+const stackedBarAxesAndLabels60 = () => (
+  <BarChart
+    stackData={mixedStackData}
+    barMarginBottom={20}
+    autoCenterTooltip
+    focusedBarIndex={2}
+    renderTooltip={(item: stackDataItem) => (
+      <View>
+        <Text>{item.stacks[0].value}</Text>
+      </View>
+    )}
+  />
+);
+
+const stackedBarAxesAndLabels61 = () => (
+  <BarChart
+    stackData={mixedStackData}
+    barMarginBottom={20}
+    autoCenterTooltip
+    focusedBarIndex={0}
+    renderTooltip={(item: stackDataItem) => (
+      <View>
+        <Text>{item.stacks[0].value}</Text>
+      </View>
+    )}
+  />
+);
+
 export const stackedBarChartTestsArray = [
   {
     component: stackedBarAxesAndLabels1,
@@ -1044,5 +1112,40 @@ export const stackedBarChartTestsArray = [
       'StackedBarChart: "mostNegativeValue" and "noOfSectionsBelowXAxis" should work together',
     id: 'stackedBarAxesAndLabels56',
     description: JSON.stringify(stackedBarAxesAndLabels56().props),
+  },
+  {
+    component: stackedBarAxesAndLabels57,
+    title:
+      'StackedBarChart: Tooltip should be rendered at proper location for a Stacked Bar chart with only positive values',
+    id: 'stackedBarAxesAndLabels57',
+    description: JSON.stringify(stackedBarAxesAndLabels57().props),
+  },
+  {
+    component: stackedBarAxesAndLabels58,
+    title:
+      'StackedBarChart: Tooltip for a +ve Bar should be rendered at proper location for a Stacked Bar chart with both +ve and -ve values',
+    id: 'stackedBarAxesAndLabels58',
+    description: JSON.stringify(stackedBarAxesAndLabels58().props),
+  },
+  {
+    component: stackedBarAxesAndLabels59,
+    title:
+      'StackedBarChart: Tooltip for a -ve Bar should be rendered at proper location for a Stacked Bar chart with both +ve and -ve values',
+    id: 'stackedBarAxesAndLabels59',
+    description: JSON.stringify(stackedBarAxesAndLabels59().props),
+  },
+  {
+    component: stackedBarAxesAndLabels60,
+    title:
+      'StackedBarChart: Tooltip for a +ve Bar should be rendered at proper location for a Stacked Bar chart with both +ve and -ve values and a BarMarginBottom',
+    id: 'stackedBarAxesAndLabels60',
+    description: JSON.stringify(stackedBarAxesAndLabels60().props),
+  },
+  {
+    component: stackedBarAxesAndLabels61,
+    title:
+      'StackedBarChart: Tooltip for a -ve Bar should be rendered at proper location for a Stacked Bar chart with both +ve and -ve values and a BarMarginBottom',
+    id: 'stackedBarAxesAndLabels61',
+    description: JSON.stringify(stackedBarAxesAndLabels61().props),
   },
 ];

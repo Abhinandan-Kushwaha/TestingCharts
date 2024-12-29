@@ -1,47 +1,45 @@
 import React from 'react';
-import {BarChart, yAxisSides} from 'react-native-gifted-charts';
+import {Text, View} from 'react-native';
+import {BarChart, barDataItem, yAxisSides} from 'react-native-gifted-charts';
 
-const positiveData = [{value: 10}, {value: 15}, {value: 6}, {value: 8}]
-const mixedData = [{value: 10}, {value: 15}, {value: -6}, {value: 8}, {value: -4}]
-const miniData = [{value: 0.4}, {value: 0.25}, {value: 0.6}, {value: 0.8}]
+const positiveData = [{value: 10}, {value: 15}, {value: 6}, {value: 8}];
+const mixedData = [
+  {value: 10},
+  {value: 15},
+  {value: -6},
+  {value: 8},
+  {value: -4},
+];
+const miniData = [{value: 0.4}, {value: 0.25}, {value: 0.6}, {value: 0.8}];
 const labelledPositiveData = [
   {value: 10, label: 'Jan'},
   {value: 15, label: 'Feb'},
   {value: 6, label: 'Mar'},
   {value: 8, label: 'Apr'},
-]
+];
 const labelledMixedData = [
   {value: 10, label: 'Jan'},
   {value: 15, label: 'Feb'},
   {value: -6, label: 'Mar'},
   {value: 8, label: 'Apr'},
   {value: -4, label: 'May'},
-]
+];
 const largeLabbelledData = [
   {value: 10, label: 'January 2024'},
   {value: 15, label: 'February 2024'},
   {value: 6, label: 'March 2024'},
   {value: 8, label: 'April 2024'},
-]
+];
 
 const barAxesAndLabels1 = () => (
-  <BarChart
-    data={positiveData}
-    showValuesAsTopLabel
-  />
+  <BarChart data={positiveData} showValuesAsTopLabel />
 );
 
 const barAxesAndLabels2 = () => (
-  <BarChart
-    data={mixedData}
-    showValuesAsTopLabel
-  />
+  <BarChart data={mixedData} showValuesAsTopLabel />
 );
 const barAxesAndLabels3 = () => (
-  <BarChart
-    data={miniData}
-    showValuesAsTopLabel
-  />
+  <BarChart data={miniData} showValuesAsTopLabel />
 );
 
 const barAxesAndLabels4 = () => (
@@ -88,11 +86,7 @@ const barAxesAndLabels8 = () => (
   />
 );
 const barAxesAndLabels9 = () => (
-  <BarChart
-    data={positiveData}
-    showValuesAsTopLabel
-    yAxisExtraHeight={40}
-  />
+  <BarChart data={positiveData} showValuesAsTopLabel yAxisExtraHeight={40} />
 );
 const barAxesAndLabels10 = () => (
   <BarChart
@@ -103,11 +97,7 @@ const barAxesAndLabels10 = () => (
   />
 );
 const barAxesAndLabels11 = () => (
-  <BarChart
-    data={positiveData}
-    showValuesAsTopLabel
-    yAxisLabelWidth={50}
-  />
+  <BarChart data={positiveData} showValuesAsTopLabel yAxisLabelWidth={50} />
 );
 const barAxesAndLabels12 = () => (
   <BarChart
@@ -118,11 +108,7 @@ const barAxesAndLabels12 = () => (
   />
 );
 const barAxesAndLabels13 = () => (
-  <BarChart
-    data={positiveData}
-    showValuesAsTopLabel
-    trimYAxisAtTop
-  />
+  <BarChart data={positiveData} showValuesAsTopLabel trimYAxisAtTop />
 );
 const barAxesAndLabels14 = () => (
   <BarChart
@@ -145,18 +131,10 @@ const barAxesAndLabels15 = () => (
   />
 );
 const barAxesAndLabels16 = () => (
-  <BarChart
-    data={positiveData}
-    showValuesAsTopLabel
-    yAxisLabelPrefix="$"
-  />
+  <BarChart data={positiveData} showValuesAsTopLabel yAxisLabelPrefix="$" />
 );
 const barAxesAndLabels17 = () => (
-  <BarChart
-    data={positiveData}
-    showValuesAsTopLabel
-    yAxisLabelSuffix="k"
-  />
+  <BarChart data={positiveData} showValuesAsTopLabel yAxisLabelSuffix="k" />
 );
 const barAxesAndLabels18 = () => (
   <BarChart
@@ -200,19 +178,11 @@ const barAxesAndLabels22 = () => (
   />
 );
 const barAxesAndLabels23 = () => (
-  <BarChart
-    data={positiveData}
-    showValuesAsTopLabel
-    rulesLength={140}
-  />
+  <BarChart data={positiveData} showValuesAsTopLabel rulesLength={140} />
 );
 
 const barAxesAndLabels24 = () => (
-  <BarChart
-    data={mixedData}
-    showValuesAsTopLabel
-    rulesLength={140}
-  />
+  <BarChart data={mixedData} showValuesAsTopLabel rulesLength={140} />
 );
 
 const barAxesAndLabels25 = () => (
@@ -276,11 +246,7 @@ const barAxesAndLabels29 = () => (
 );
 
 const barAxesAndLabels30 = () => (
-  <BarChart
-    data={positiveData}
-    showValuesAsTopLabel
-    showVerticalLines
-  />
+  <BarChart data={positiveData} showValuesAsTopLabel showVerticalLines />
 );
 const barAxesAndLabels31 = () => (
   <BarChart
@@ -318,19 +284,11 @@ const barAxesAndLabels34 = () => (
 );
 
 const barAxesAndLabels35 = () => (
-  <BarChart
-    data={labelledPositiveData}
-    showValuesAsTopLabel
-    rotateLabel
-  />
+  <BarChart data={labelledPositiveData} showValuesAsTopLabel rotateLabel />
 );
 
 const barAxesAndLabels36 = () => (
-  <BarChart
-    data={labelledMixedData}
-    showValuesAsTopLabel
-    rotateLabel
-  />
+  <BarChart data={labelledMixedData} showValuesAsTopLabel rotateLabel />
 );
 
 const barAxesAndLabels37 = () => (
@@ -400,11 +358,7 @@ const barAxesAndLabels44 = () => (
 );
 
 const barAxesAndLabels45 = () => (
-  <BarChart
-    data={positiveData}
-    showValuesAsTopLabel
-    noOfSections={5}
-  />
+  <BarChart data={positiveData} showValuesAsTopLabel noOfSections={5} />
 );
 const barAxesAndLabels46 = () => (
   <BarChart
@@ -415,19 +369,11 @@ const barAxesAndLabels46 = () => (
   />
 );
 const barAxesAndLabels47 = () => (
-  <BarChart
-    data={positiveData}
-    showValuesAsTopLabel
-    maxValue={16}
-  />
+  <BarChart data={positiveData} showValuesAsTopLabel maxValue={16} />
 );
 
 const barAxesAndLabels48 = () => (
-  <BarChart
-    data={positiveData}
-    showValuesAsTopLabel
-    stepValue={4}
-  />
+  <BarChart data={positiveData} showValuesAsTopLabel stepValue={4} />
 );
 
 const barAxesAndLabels49 = () => (
@@ -456,18 +402,10 @@ const barAxesAndLabels51 = () => (
   />
 );
 const barAxesAndLabels52 = () => (
-  <BarChart
-    data={mixedData}
-    showValuesAsTopLabel
-    mostNegativeValue={-12}
-  />
+  <BarChart data={mixedData} showValuesAsTopLabel mostNegativeValue={-12} />
 );
 const barAxesAndLabels53 = () => (
-  <BarChart
-    data={mixedData}
-    showValuesAsTopLabel
-    negativeStepValue={-3}
-  />
+  <BarChart data={mixedData} showValuesAsTopLabel negativeStepValue={-3} />
 );
 
 const barAxesAndLabels54 = () => (
@@ -491,6 +429,73 @@ const barAxesAndLabels56 = () => (
     data={mixedData}
     mostNegativeValue={-12}
     noOfSectionsBelowXAxis={4}
+  />
+);
+
+const barAxesAndLabels57 = () => (
+  <BarChart
+    data={positiveData}
+    autoCenterTooltip
+    focusedBarIndex={2}
+    renderTooltip={(item: barDataItem) => (
+      <View>
+        <Text>{item.value}</Text>
+      </View>
+    )}
+  />
+);
+
+const barAxesAndLabels58 = () => (
+  <BarChart
+    data={mixedData}
+    autoCenterTooltip
+    focusedBarIndex={2}
+    renderTooltip={(item: barDataItem) => (
+      <View>
+        <Text>{item.value}</Text>
+      </View>
+    )}
+  />
+);
+
+const barAxesAndLabels59 = () => (
+  <BarChart
+    data={mixedData}
+    autoCenterTooltip
+    focusedBarIndex={0}
+    renderTooltip={(item: barDataItem) => (
+      <View>
+        <Text>{item.value}</Text>
+      </View>
+    )}
+  />
+);
+
+const barAxesAndLabels60 = () => (
+  <BarChart
+    data={mixedData}
+    barMarginBottom={20}
+    autoCenterTooltip
+    focusedBarIndex={2}
+    renderTooltip={(item: barDataItem) => (
+      <View>
+        <Text>{item.value}</Text>
+      </View>
+    )}
+  />
+);
+
+const barAxesAndLabels61 = () => (
+  <BarChart
+    data={mixedData}
+    barMarginBottom={20}
+    autoCenterTooltip
+    focusedBarIndex={0}
+    renderTooltip={(item: barDataItem) => (
+      <View>
+        <Text>{item.value}</Text>
+      </View>
+    )}
   />
 );
 
@@ -871,5 +876,40 @@ export const barChartTestsArray = [
       'BarChart: "mostNegativeValue" and "noOfSectionsBelowXAxis" should work together',
     id: 'barAxesAndLabels56',
     description: JSON.stringify(barAxesAndLabels56().props),
+  },
+  {
+    component: barAxesAndLabels57,
+    title:
+      'BarChart: Tooltip should be rendered at proper location for a Bar chart with only positive values',
+    id: 'barAxesAndLabels57',
+    description: JSON.stringify(barAxesAndLabels57().props),
+  },
+  {
+    component: barAxesAndLabels58,
+    title:
+      'BarChart: Tooltip for a +ve Bar should be rendered at proper location for a Bar chart with both +ve and -ve values',
+    id: 'barAxesAndLabels58',
+    description: JSON.stringify(barAxesAndLabels58().props),
+  },
+  {
+    component: barAxesAndLabels59,
+    title:
+      'BarChart: Tooltip for a -ve Bar should be rendered at proper location for a Bar chart with both +ve and -ve values',
+    id: 'barAxesAndLabels59',
+    description: JSON.stringify(barAxesAndLabels59().props),
+  },
+  {
+    component: barAxesAndLabels60,
+    title:
+      'BarChart: Tooltip for a +ve Bar should be rendered at proper location for a Bar chart with both +ve and -ve values and a BarMarginBottom',
+    id: 'barAxesAndLabels60',
+    description: JSON.stringify(barAxesAndLabels60().props),
+  },
+  {
+    component: barAxesAndLabels61,
+    title:
+      'BarChart: Tooltip for a -ve Bar should be rendered at proper location for a Bar chart with both +ve and -ve values and a BarMarginBottom',
+    id: 'barAxesAndLabels61',
+    description: JSON.stringify(barAxesAndLabels61().props),
   },
 ];
