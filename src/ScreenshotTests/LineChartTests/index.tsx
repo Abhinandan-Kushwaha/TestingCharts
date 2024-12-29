@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text} from 'react-native';
-import {LineChart, yAxisSides} from 'react-native-gifted-charts';
+import {LineChart, lineDataItem, yAxisSides} from 'react-native-gifted-charts';
 
 const positiveData = [{value: 10}, {value: 15}, {value: 6}, {value: 8}];
 const mixedData = [
@@ -589,6 +589,20 @@ export const lineAxesAndLabels58 = () => (
   />
 );
 
+export const lineAxesAndLabels59 = () => (
+  <LineChart
+    data={[
+      {
+        value: 8,
+        dataPointLabelComponent: (item: lineDataItem) => (
+          <Text>{item?.value}</Text>
+        ),
+      },
+      ...positiveData,
+    ]}
+  />
+);
+
 export const lineChartTestsArray = [
   {
     component: lineAxesAndLabels1,
@@ -978,5 +992,12 @@ export const lineChartTestsArray = [
       'LineChart: pointer with horizontal strip should work when width of chart is given',
     id: 'lineAxesAndLabels58',
     description: JSON.stringify(lineAxesAndLabels58().props),
+  },
+  {
+    component: lineAxesAndLabels59,
+    title:
+      'LineChart: Custom data point label component should work',
+    id: 'lineAxesAndLabels59',
+    description: JSON.stringify(lineAxesAndLabels59().props),
   },
 ];
