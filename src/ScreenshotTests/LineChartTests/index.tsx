@@ -31,6 +31,26 @@ const largeLabbelledData = [
   {value: 8, label: 'April 2024'},
 ];
 
+const missingInitialValuePositiveData = [
+  {},
+  {value: 18},
+  {value: 40},
+  {value: 36},
+  {value: 60},
+  {value: 54},
+  {value: 85},
+];
+
+const positiveDataWithAValueBelowOffset = [
+  {value: 0},
+  {value: 18},
+  {value: 40},
+  {value: 36},
+  {value: 60},
+  {value: 54},
+  {value: 85},
+];
+
 const lineAxesAndLabels1 = () => (
   <LineChart
     data={positiveData}
@@ -603,6 +623,24 @@ export const lineAxesAndLabels59 = () => (
   />
 );
 
+export const lineAxesAndLabels60 = () => (
+  <LineChart
+    data={missingInitialValuePositiveData}
+    yAxisOffset={10}
+    spacing={25}
+    extrapolateMissingValues={false}
+  />
+);
+
+export const lineAxesAndLabels61 = () => (
+  <LineChart
+    data={positiveDataWithAValueBelowOffset}
+    yAxisOffset={10}
+    spacing={25}
+    extrapolateMissingValues={false}
+  />
+);
+
 export const lineChartTestsArray = [
   {
     component: lineAxesAndLabels1,
@@ -995,9 +1033,21 @@ export const lineChartTestsArray = [
   },
   {
     component: lineAxesAndLabels59,
-    title:
-      'LineChart: Custom data point label component should work',
+    title: 'LineChart: Custom data point label component should work',
     id: 'lineAxesAndLabels59',
     description: JSON.stringify(lineAxesAndLabels59().props),
+  },
+  {
+    component: lineAxesAndLabels60,
+    title: 'LineChart: 4th quadrant should NOT be rendered if data has only positive values, but due to extrapolation we get a negative value and yAxisOffset is used',
+    id: 'lineAxesAndLabels60',
+    description: JSON.stringify(lineAxesAndLabels60().props),
+  },
+
+  {
+    component: lineAxesAndLabels61,
+    title: 'LineChart: 4th quadrant should be rendered if data has only positive values, but we have a value less than yAxisOffset',
+    id: 'lineAxesAndLabels61',
+    description: JSON.stringify(lineAxesAndLabels61().props),
   },
 ];

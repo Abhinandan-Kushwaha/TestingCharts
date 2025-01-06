@@ -2760,6 +2760,42 @@
           </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
           <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
   <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels60')"><i id="lineAxesAndLabels60icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: 4th quadrant should NOT be rendered if data has only positive values, but due to extrapolation we get a negative value and yAxisOffset is used</div>
+  </div>
+  <div id="lineAxesAndLabels60" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{},{"value":18},{"value":40},{"value":36},{"value":60},{"value":54},{"value":85}],"yAxisOffset":10,"spacing":25,"extrapolateMissingValues":false}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels60
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels60.png" alt="./old/lineAxesAndLabels60.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
+      <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels61')"><i id="lineAxesAndLabels61icon" class="fa fa-chevron-down"></i></div>
+      <div style="padding: 6px;">LineChart: 4th quadrant should be rendered if data has only positive values, but we have a value less than yAxisOffset</div>
+  </div>
+  <div id="lineAxesAndLabels61" style="display: none;">
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">Description:</span> {"data":[{"value":0},{"value":18},{"value":40},{"value":36},{"value":60},{"value":54},{"value":85}],"yAxisOffset":10,"spacing":25,"extrapolateMissingValues":false}
+    </div>
+    <div style="margin-left: 10px; margin-top: 6px;">
+        <span style="font-weight: bold; margin-right: 10px;">ID:</span> lineAxesAndLabels61
+    </div>
+  </div>
+  </div>
+          <div class="imgContainer" style="display: flex; margin: 0px 4px; padding: 5px; overflow: scroll; background-color: transparent;">
+          <img style="max-width: 500px;" src="./old/lineAxesAndLabels61.png" alt="./old/lineAxesAndLabels61.png"/>
+          </div>
+          </div><div style="border: 2px solid #89AB59; border-radius: 2px; margin: 12px 5px 20px 5px; padding: 5px; overflow: scroll; font-size: 14px">
+          <div style="border: 1px solid #aaa; border-radius: 2px; padding-bottom: 6px">
+  <div style="background-color: #eee; display: flex;">
       <div style="background-color: #ddd; border: 1px solid lightgray; border-radius: 2px; padding: 5px 10px; cursor: pointer" onclick="onShowHide('lineAxesAndLabels7')"><i id="lineAxesAndLabels7icon" class="fa fa-chevron-down"></i></div>
       <div style="padding: 6px;">LineChart: A chart with "secondaryYaxis" should have the secondary y Axis labels and the Y-axis line at the proper position (given secondary data)</div>
   </div>
@@ -4365,11 +4401,11 @@
               <div id="reportBox" style="padding: 10px 24px; border-radius: 2px; width: 140px; margin-left: 10px; font-family: Arial, Helvetica, sans-serif;">
                 <div style="color: wheat; display: flex; justify-content: space-between; margin-bottom: 4px;">
                     <div>Total: </div>
-                    <div>237 </div>
+                    <div>239 </div>
                 </div>
                 <div style="color: #7CE77C; display: flex; justify-content: space-between; margin-bottom: 4px;">
                     <div>Passed: </div>
-                    <div>237 </div>
+                    <div>239 </div>
                 </div>
                 <div style="color: #F87069; display: flex; justify-content: space-between;">
                     <div>Failed: </div>
