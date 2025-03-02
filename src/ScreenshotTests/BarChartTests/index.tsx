@@ -295,7 +295,7 @@ const barAxesAndLabels37 = () => (
   <BarChart
     data={labelledPositiveData}
     showValuesAsTopLabel
-    labelsDistanceFromXaxis={20}
+    labelsDistanceFromXaxis={10}
   />
 );
 
@@ -303,7 +303,7 @@ const barAxesAndLabels38 = () => (
   <BarChart
     data={labelledMixedData}
     showValuesAsTopLabel
-    labelsDistanceFromXaxis={20}
+    labelsDistanceFromXaxis={10}
   />
 );
 
