@@ -499,6 +499,20 @@ const barAxesAndLabels61 = () => (
   />
 );
 
+
+const barAxesAndLabels62 = () => (
+  <BarChart
+    data={positiveData}
+    autoCenterTooltip
+    focusedBarIndex={[1,3]}
+    renderTooltip={(item: barDataItem) => (
+      <View>
+        <Text>{item.value}</Text>
+      </View>
+    )}
+  />
+);
+
 export const barChartTestsArray = [
   {
     component: barAxesAndLabels1,
@@ -911,5 +925,12 @@ export const barChartTestsArray = [
       'BarChart: Tooltip for a -ve Bar should be rendered at proper location for a Bar chart with both +ve and -ve values and a BarMarginBottom',
     id: 'barAxesAndLabels61',
     description: JSON.stringify(barAxesAndLabels61().props),
+  },
+  {
+    component: barAxesAndLabels62,
+    title:
+      'BarChart: Multi-focus should work by passing an array of numbers in focsedBarIndex (this should render tooltips for both focused bars)',
+    id: 'barAxesAndLabels62',
+    description: JSON.stringify(barAxesAndLabels62().props),
   },
 ];
