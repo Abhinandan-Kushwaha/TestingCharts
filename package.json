@@ -11,7 +11,6 @@
     "ss-test": "cd ./node_modules/screenshot-test-server/dist && node server.js"
   },
   "dependencies": {
-    "gifted-charts-core": "file:.yalc/gifted-charts-core",
     "react": "18.3.1",
     "react-native": "0.75.3",
     "react-native-fs": "^2.20.0",
