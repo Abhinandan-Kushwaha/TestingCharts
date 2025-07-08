@@ -31,8 +31,7 @@ const largeLabbelledData = [
   {value: 8, label: 'April 2024'},
 ];
 
-const missingInitialValuePositiveData = [
-  {},
+const longDataArray = [
   {value: 18},
   {value: 40},
   {value: 36},
@@ -40,6 +39,8 @@ const missingInitialValuePositiveData = [
   {value: 54},
   {value: 85},
 ];
+
+const missingInitialValuePositiveData = [{}, ...longDataArray];
 
 const positiveDataWithAValueBelowOffset = [
   {value: 0},
@@ -641,6 +642,107 @@ export const lineAxesAndLabels61 = () => (
   />
 );
 
+const d1 = [
+  {value: 0},
+  {value: 10},
+  {value: 8},
+  {value: 58},
+  {value: 56},
+  {value: 78},
+  {value: 74},
+  {value: 98},
+]
+
+const d2 = [
+  {value: 0},
+  {value: 20},
+  {value: 18},
+  {value: 40},
+  {value: 36},
+  {value: 60},
+  {value: 54},
+  {value: 85},
+]
+
+const Comp1 = () => (
+  <LineChart
+    areaChart
+    curved
+    data={d1}
+    data2={d2}
+    height={250}
+    showVerticalLines
+    spacing={44}
+    initialSpacing={0}
+    hideDataPoints
+    startOpacity={0.8}
+    endOpacity={0.3}
+    color1="skyblue"
+    color2="orange"
+    textColor1="green"
+    dataPointsColor1="blue"
+    dataPointsColor2="red"
+    startFillColor1="skyblue"
+    startFillColor2="orange"
+  />
+);
+
+const Comp2 = () => <LineChart
+areaChart
+curved
+data={d1}
+data2={d2}
+height={250}
+showVerticalLines
+spacing={44}
+initialSpacing={0}
+hideDataPoints
+startOpacity={0.8}
+endOpacity={0.3}
+color1="black"
+color2="red"
+textColor1="green"
+dataPointsColor1="black"
+dataPointsColor2="red"
+startFillColor1="black"
+startFillColor2="red"
+/>
+
+export const lineAxesAndLabels62 = () => (
+  <>
+    <Comp1 />
+    <Comp2 />    
+  </>
+);
+const chartData = [{value: 10}, {value: 20}, {value: 15}, {value: 25}];
+
+const spreadData = [
+  {lower: 4, upper: 16},
+  {lower: 16, upper: 22},
+  {lower: 12, upper: 19},
+  {lower: 20, upper: 27},
+];
+
+export const lineAxesAndLabels64 = () => (
+  <LineChart
+    data={chartData}
+    spreadAreaData={spreadData}
+    spreadAreaColor="rgba(100, 150, 200, 0.3)"
+    spreadAreaOpacity={0.4}
+  />
+);
+
+export const lineAxesAndLabels63 = () => (
+  <LineChart
+    areaChart
+    startOpacity1={0.5}
+    endOpacity1={0.2}
+    data={longDataArray}
+    startIndex={1}
+    endIndex={3}
+  />
+);
+
 export const lineChartTestsArray = [
   {
     component: lineAxesAndLabels1,
@@ -1039,15 +1141,36 @@ export const lineChartTestsArray = [
   },
   {
     component: lineAxesAndLabels60,
-    title: 'LineChart: 4th quadrant should NOT be rendered if data has only positive values, but due to extrapolation we get a negative value and yAxisOffset is used',
+    title:
+      'LineChart: 4th quadrant should NOT be rendered if data has only positive values, but due to extrapolation we get a negative value and yAxisOffset is used',
     id: 'lineAxesAndLabels60',
     description: JSON.stringify(lineAxesAndLabels60().props),
   },
-
   {
     component: lineAxesAndLabels61,
-    title: 'LineChart: 4th quadrant should be rendered if data has only positive values, but we have a value less than yAxisOffset',
+    title:
+      'LineChart: 4th quadrant should be rendered if data has only positive values, but we have a value less than yAxisOffset',
     id: 'lineAxesAndLabels61',
     description: JSON.stringify(lineAxesAndLabels61().props),
+  },
+  {
+    component: lineAxesAndLabels62,
+    title:
+      'LineChart: The gradient colors should not spill from one area-chart to another',
+    id: 'lineAxesAndLabels62',
+    description: JSON.stringify(Comp1().props)+" AND " + JSON.stringify(Comp2().props),
+  },
+  {
+    component: lineAxesAndLabels63,
+    title:
+      'LineChart: startIndex and endIndex should work properly for area charts',
+    id: 'lineAxesAndLabels63',
+    description: JSON.stringify(lineAxesAndLabels63().props),
+  },
+  {
+    component: lineAxesAndLabels64,
+    title: 'LineChart: spreadAreaData should work for line chart',
+    id: 'lineAxesAndLabels64',
+    description: JSON.stringify(lineAxesAndLabels64().props),
   },
 ];
