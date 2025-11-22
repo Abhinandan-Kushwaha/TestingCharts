@@ -23,6 +23,7 @@ const BiColorAreaChart = () => {
         startFillColor="green"
         startFillColorNegative="red"
         showXAxisIndices
+        trimYAxisAtTop
       />
     </View>
   );

@@ -52,6 +52,9 @@ const positiveDataWithAValueBelowOffset = [
   {value: 85},
 ];
 
+const data = [{value: 10}, {value: 15}, {value: 2}, {value: 19.6}];
+const data2 = [{value: 9}, {value: 4}, {value: 12}, {value: 1}];
+
 const lineAxesAndLabels1 = () => (
   <LineChart
     data={positiveData}
@@ -651,7 +654,7 @@ const d1 = [
   {value: 78},
   {value: 74},
   {value: 98},
-]
+];
 
 const d2 = [
   {value: 0},
@@ -662,7 +665,7 @@ const d2 = [
   {value: 60},
   {value: 54},
   {value: 85},
-]
+];
 
 const Comp1 = () => (
   <LineChart
@@ -687,31 +690,33 @@ const Comp1 = () => (
   />
 );
 
-const Comp2 = () => <LineChart
-areaChart
-curved
-data={d1}
-data2={d2}
-height={250}
-showVerticalLines
-spacing={44}
-initialSpacing={0}
-hideDataPoints
-startOpacity={0.8}
-endOpacity={0.3}
-color1="black"
-color2="red"
-textColor1="green"
-dataPointsColor1="black"
-dataPointsColor2="red"
-startFillColor1="black"
-startFillColor2="red"
-/>
+const Comp2 = () => (
+  <LineChart
+    areaChart
+    curved
+    data={d1}
+    data2={d2}
+    height={250}
+    showVerticalLines
+    spacing={44}
+    initialSpacing={0}
+    hideDataPoints
+    startOpacity={0.8}
+    endOpacity={0.3}
+    color1="black"
+    color2="red"
+    textColor1="green"
+    dataPointsColor1="black"
+    dataPointsColor2="red"
+    startFillColor1="black"
+    startFillColor2="red"
+  />
+);
 
 export const lineAxesAndLabels62 = () => (
   <>
     <Comp1 />
-    <Comp2 />    
+    <Comp2 />
   </>
 );
 const chartData = [{value: 10}, {value: 20}, {value: 15}, {value: 25}];
@@ -723,6 +728,17 @@ const spreadData = [
   {lower: 20, upper: 27},
 ];
 
+export const lineAxesAndLabels63 = () => (
+  <LineChart
+    areaChart
+    startOpacity1={0.5}
+    endOpacity1={0.2}
+    data={longDataArray}
+    startIndex={1}
+    endIndex={3}
+  />
+);
+
 export const lineAxesAndLabels64 = () => (
   <LineChart
     data={chartData}
@@ -732,14 +748,48 @@ export const lineAxesAndLabels64 = () => (
   />
 );
 
-export const lineAxesAndLabels63 = () => (
+export const lineAxesAndLabels65 = () => (
   <LineChart
-    areaChart
-    startOpacity1={0.5}
-    endOpacity1={0.2}
-    data={longDataArray}
-    startIndex={1}
-    endIndex={3}
+    data={data}
+    data2={data2}
+    thickness={4}
+    height={200}
+    curved
+    hideDataPoints
+    referenceLine1Position={7}
+    showReferenceLine1
+    referenceLine2Position={11}
+    showReferenceLine2
+    referenceLine3Position={15}
+    showReferenceLine3
+    hideRules
+    colors={[
+      {
+        from: 0,
+        to: 3,
+        color: 'red',
+      },
+      {
+        from: 3,
+        to: 7,
+        color: 'orange',
+      },
+      {
+        from: 7,
+        to: 11,
+        color: 'brown',
+      },
+      {
+        from: 11,
+        to: 15,
+        color: 'green',
+      },
+      {
+        from: 15,
+        to: 20,
+        color: 'blue',
+      },
+    ]}
   />
 );
 
@@ -1158,7 +1208,8 @@ export const lineChartTestsArray = [
     title:
       'LineChart: The gradient colors should not spill from one area-chart to another',
     id: 'lineAxesAndLabels62',
-    description: JSON.stringify(Comp1().props)+" AND " + JSON.stringify(Comp2().props),
+    description:
+      JSON.stringify(Comp1().props) + ' AND ' + JSON.stringify(Comp2().props),
   },
   {
     component: lineAxesAndLabels63,
@@ -1172,5 +1223,12 @@ export const lineChartTestsArray = [
     title: 'LineChart: spreadAreaData should work for line chart',
     id: 'lineAxesAndLabels64',
     description: JSON.stringify(lineAxesAndLabels64().props),
+  },
+  {
+    component: lineAxesAndLabels65,
+    title:
+      'LineChart: Line chart having 2 lines and 3 reference lines with multiple colors based on Y-range using the colors prop',
+    id: 'lineAxesAndLabels65',
+    description: JSON.stringify(lineAxesAndLabels65().props),
   },
 ];
