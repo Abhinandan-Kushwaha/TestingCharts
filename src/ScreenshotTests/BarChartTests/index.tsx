@@ -513,6 +513,22 @@ const barAxesAndLabels62 = () => (
   />
 );
 
+const barAxesAndLabels63 = () => (
+  <BarChart
+      data={[
+        { value: 5 },
+        { value: 3 },
+        {
+          value:8,
+          showVerticalLine:true, verticalLineThickness:30
+        }
+      ]}
+      barWidth={15}
+      frontColor={'navy'}
+      roundedTop
+    />
+)
+
 export const barChartTestsArray = [
   {
     component: barAxesAndLabels1,
@@ -932,5 +948,11 @@ export const barChartTestsArray = [
       'BarChart: Multi-focus should work by passing an array of numbers in focsedBarIndex (this should render tooltips for both focused bars)',
     id: 'barAxesAndLabels62',
     description: JSON.stringify(barAxesAndLabels62().props),
+  },
+  {
+    component: barAxesAndLabels63,
+    title: 'BarChart: showVerticalLine and verticalLineThickness should work on specific Bar',
+    id: 'barAxesAndLabels63',
+    description: JSON.stringify(barAxesAndLabels63().props),
   },
 ];
