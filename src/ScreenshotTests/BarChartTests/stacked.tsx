@@ -230,6 +230,33 @@ const labelledMixedStack = [
   },
 ];
 
+const stackDataWithVerticalLine: stackDataItem[] = [
+  {
+    stacks: [
+      {value: 5, color: 'skyblue'},
+      {value: 3, color: 'orange'},
+      {value: 8, color: 'green'},
+    ],
+  },
+  {
+    stacks: [
+      {value: 2, color: 'skyblue'},
+      {value: 4, color: 'orange'},
+      {value: 1, color: 'green'},
+    ],
+  },
+  {
+    stacks: [
+      {value: 1, color: 'skyblue'},
+      {value: 2, color: 'orange'},
+      {value: 1, color: 'green'},
+    ],
+    showVerticalLine: true,
+    verticalLineThickness: 30,
+    verticalLineColor: '#dde',
+  },
+];
+
 const stackedBarAxesAndLabels1 = () => (
   <BarChart stackData={positiveStackData} showValuesAsTopLabel />
 );
@@ -733,6 +760,15 @@ const stackedBarAxesAndLabels61 = () => (
   />
 );
 
+const stackedBarAxesAndLabels62 = () => (
+  <BarChart
+    stackData={stackDataWithVerticalLine}
+    barWidth={15}
+    frontColor={'navy'}
+    roundedTop
+  />
+);
+
 export const stackedBarChartTestsArray = [
   {
     component: stackedBarAxesAndLabels1,
@@ -1147,5 +1183,12 @@ export const stackedBarChartTestsArray = [
       'StackedBarChart: Tooltip for a -ve Bar should be rendered at proper location for a Stacked Bar chart with both +ve and -ve values and a BarMarginBottom',
     id: 'stackedBarAxesAndLabels61',
     description: JSON.stringify(stackedBarAxesAndLabels61().props),
+  },
+  {
+    component: stackedBarAxesAndLabels62,
+    title:
+      'StackedBarChart: showVerticalLine and verticalLineThickness should work on specific Bar',
+    id: 'stackedBarAxesAndLabels62',
+    description: JSON.stringify(stackedBarAxesAndLabels62().props),
   },
 ];
