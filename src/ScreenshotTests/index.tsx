@@ -18,7 +18,9 @@ const AllScreenshotTests = () => {
     ...specialPieChartTestsArray,
   ];
 
-  return withScreenShotTest(allTestsArray);
+  return withScreenShotTest(allTestsArray, false, {
+    autoCapture: true
+  });
 };
 
 export default AllScreenshotTests;
