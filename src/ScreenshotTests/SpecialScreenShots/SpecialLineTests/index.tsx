@@ -1,4 +1,5 @@
 import AreaTwo from './AreaTwo';
+import BarLineWithCustomDataAndYOffset from './BarLineWithCustomDataAndYOffset';
 import BiColorAreaChart from './BiColorAreaChart';
 import CaloriesBurnt from './CaloriesBurnt';
 import ChartWithAdjustingPointer from './ChartWithAdjustingPointer';
@@ -118,5 +119,12 @@ export const specialLineChartTestArray = [
     title: 'SimpleBlueLineWithGivenNumberOfVerticalLines',
     id: 'SimpleBlueLineWithGivenNumberOfVerticalLines',
     description: '',
+  },
+  {
+    component: BarLineWithCustomDataAndYOffset,
+    title: 'BarLineWithCustomDataAndYOffset',
+    id: 'BarLineWithCustomDataAndYOffset',
+    description:
+      'A combined Bar and Line chart with custom data points and yAxis offset for the line chart',
   },
 ];
