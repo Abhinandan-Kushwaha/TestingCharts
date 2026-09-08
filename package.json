@@ -8,13 +8,13 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
-    "ss-test": "cd ./node_modules/screenshot-test-server/dist && node server.js"
+    "ss-test": "cd ./node_modules/screenshot-test-server/dist && node server.js false"
   },
   "dependencies": {
     "react": "18.3.1",
     "react-native": "0.75.3",
     "react-native-fs": "^2.20.0",
-    "react-native-gifted-charts": "1.4.72",
+    "react-native-gifted-charts": "1.4.78",
     "react-native-linear-gradient": "^2.8.3",
     "react-native-screenshot-test": "0.0.9",
     "react-native-svg": "^15.7.1",
